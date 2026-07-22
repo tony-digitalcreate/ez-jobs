@@ -40,8 +40,10 @@ const WEB_QUERIES = [
   '"food security" OR "rural development" job Vientiane Lao PDR',
 ];
 
-// hosts that are never job postings
-const JUNK_HOSTS = ['duckduckgo.com', 'wikipedia.org', 'facebook.com', 'youtube.com', 'google.com'];
+// hosts that are never job postings, plus bot-blocked aggregators that
+// re-list expired jobs and can't be date-verified (the real orgs' pages are covered anyway)
+const JUNK_HOSTS = ['duckduckgo.com', 'wikipedia.org', 'facebook.com', 'youtube.com', 'google.com',
+  'tealhq.com', 'visaboards.com', 'jobrapido.com', 'jooble.org', 'glassdoor.com'];
 
 function readJson(file, fallback) {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { return fallback; }
@@ -82,7 +84,8 @@ function extractDates(text) {
 async function verifyWebJob(job) {
   try {
     const res = await fetchWithTimeout(job.url, {}, 15000);
-    if (!res.ok) return { fresh: true };
+    if (res.status === 404 || res.status === 410) return { fresh: false }; // posting removed
+    if (!res.ok) return { fresh: true }; // blocked/error - benefit of the doubt
     const html = (await res.text()).replace(/<[^>]+>/g, ' ');
     const now = Date.now();
     const dl = [], posted = [];
@@ -285,11 +288,12 @@ async function runScan(trigger = 'manual') {
     await new Promise(r => setTimeout(r, 400));
   }
 
-  // prune: 60 days unseen, expired, or dated last-year - but never favorites
+  // prune: 60 days unseen, expired, dated last-year, or junk-host - but never favorites
   const cutoff = Date.now() - 60 * 24 * 3600 * 1000;
   for (const [id, j] of Object.entries(store.jobs)) {
     if (j.fav) continue;
-    if (new Date(j.lastSeen).getTime() < cutoff || !isFresh(j)) delete store.jobs[id];
+    const junk = JUNK_HOSTS.some(h => (j.source || '').includes(h) || (j.url || '').includes(h));
+    if (junk || new Date(j.lastSeen).getTime() < cutoff || !isFresh(j)) delete store.jobs[id];
   }
 
   writeJson(JOBS_FILE, store);
