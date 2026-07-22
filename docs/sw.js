@@ -1,5 +1,5 @@
 // EZ JOBS service worker - cache app shell, network-first for API
-const CACHE = 'ezjobs-v2'; // bumped: blue theme + favorites + status timeline
+const CACHE = 'ezjobs-v3'; // bumped: cloud sync + backup/restore
 const SHELL = ['./', 'index.html', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
@@ -16,6 +16,7 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET') return;
+  if (url.origin !== location.origin) return; // never touch Firebase/CDN traffic
   if (url.pathname.includes('/api/')) {
     // network only for API
     return;

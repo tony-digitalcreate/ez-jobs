@@ -11,6 +11,9 @@ const LS = {
   set(k, v) { localStorage.setItem(k, JSON.stringify(v)); },
 };
 
+// favorites: authoritative in-memory set of job ids, synced across devices via cloud
+let favSet = new Set(LS.get('ezjobs_favs', []));
+
 const $ = id => document.getElementById(id);
 const esc = s => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -51,11 +54,10 @@ async function loadJobs() {
         fetch('data/meta.json?t=' + Date.now()).then(r => r.json()).catch(() => ({})),
       ]);
       const hidden = new Set(LS.get('ezjobs_hidden', []));
-      const favs = new Set(LS.get('ezjobs_favs', []));
       const lastVisit = LS.get('ezjobs_lastvisit', null);
       jobs = Object.values(store.jobs || {})
         .filter(j => !hidden.has(j.id))
-        .map(j => ({ ...j, fav: favs.has(j.id), isNew: !lastVisit || (j.firstSeen || '') > lastVisit }))
+        .map(j => ({ ...j, fav: favSet.has(j.id), isNew: !lastVisit || (j.firstSeen || '') > lastVisit }))
         .sort((a, b) => (b.firstSeen || '').localeCompare(a.firstSeen || ''));
       lastScan = meta.lastScan || null;
       renderJobs();
@@ -64,6 +66,9 @@ async function loadJobs() {
       const r = await fetch('api/jobs');
       const d = await r.json();
       jobs = d.jobs || [];
+      // merge server fav flags with the synced set, then mark uniformly
+      jobs.forEach(j => { if (j.fav) favSet.add(j.id); });
+      jobs.forEach(j => { j.fav = favSet.has(j.id); });
       lastScan = d.lastScan;
       renderJobs();
       renderMeta(d);
@@ -145,17 +150,20 @@ async function toggleFav(id) {
   const j = jobs.find(x => x.id === id);
   if (!j) return;
   j.fav = !j.fav;
-  if (STATIC) {
-    const favs = LS.get('ezjobs_favs', []).filter(f => f !== id);
-    if (j.fav) favs.push(id);
-    LS.set('ezjobs_favs', favs);
-  } else {
-    await fetch('api/jobs/' + encodeURIComponent(id) + '/fav', {
-      method: 'PUT', headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ fav: j.fav }),
-    });
-  }
+  if (j.fav) favSet.add(id); else favSet.delete(id);
+  persistFavsLocal(id, j.fav);
+  cloudPushState();
   renderJobs();
+}
+
+function persistFavsLocal(changedId, fav) {
+  LS.set('ezjobs_favs', [...favSet]);
+  if (!STATIC && changedId !== undefined) {
+    fetch('api/jobs/' + encodeURIComponent(changedId) + '/fav', {
+      method: 'PUT', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ fav }),
+    }).catch(() => {});
+  }
 }
 
 async function scanNow() {
@@ -223,18 +231,20 @@ function makeNote(data) {
 }
 
 async function createNote(data) {
+  let n;
   if (STATIC) {
-    const n = makeNote(data);
+    n = makeNote(data);
     notes.unshift(n);
     LS.set('ezjobs_notes', notes);
-    return n;
+  } else {
+    const r = await fetch('api/notes', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(data),
+    });
+    n = await r.json();
+    notes.unshift(n);
   }
-  const r = await fetch('api/notes', {
-    method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify(data),
-  });
-  const n = await r.json();
-  notes.unshift(n);
+  cloudPushNote(n);
   return n;
 }
 
@@ -373,6 +383,7 @@ async function saveNote(id, patch) {
       body: JSON.stringify(patch),
     });
   }
+  cloudPushNote(n);
   const hint = $('saved-' + id);
   if (hint) { hint.classList.add('show'); setTimeout(() => hint.classList.remove('show'), 1500); }
 }
@@ -386,8 +397,184 @@ async function deleteNote(id) {
     await fetch('api/notes/' + encodeURIComponent(id), { method: 'DELETE' });
     notes = notes.filter(n => n.id !== id);
   }
+  cloudDeleteNote(id);
   renderNotes();
 }
+
+// ---------- cloud sync (Firebase Firestore, same project as EZ LOTTO) ----------
+// Shares her tracker + favorites between phone and PC. Fully optional:
+// if Firestore is unreachable the app keeps working local-only.
+// Data model: ezjobs_notes/{noteId} = note; ezjobs_state/main = {favs, updatedAt}.
+const firebaseConfig = {
+  apiKey: "AIzaSyBryg9p-xcnNR4Ui-6DWPuYU7xpjZodHrA",
+  authDomain: "ez-lotto-testing.firebaseapp.com",
+  projectId: "ez-lotto-testing",
+  storageBucket: "ez-lotto-testing.firebasestorage.app",
+  messagingSenderId: "644914912791",
+  appId: "1:644914912791:web:ab567d8e5ee529fa7d0652"
+};
+const NOTES_COL = 'ezjobs_notes';
+let cloud = null, cloudBusy = false, cloudUnsubs = [], lastStatePush = 0;
+
+function cloudPill(cls, txt) { const p = $('cloudStat'); if (p) { p.className = 'cloudstat ' + cls; p.textContent = txt; } }
+function markSynced() { cloudPill('ok', '☁ synced'); }
+
+async function persistNotesLocal() {
+  if (STATIC) {
+    LS.set('ezjobs_notes', notes);
+  } else {
+    await fetch('api/notes/bulk', {
+      method: 'PUT', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ notes }),
+    }).catch(() => {});
+  }
+}
+
+function noteTime(n) { return Date.parse(n && n.updatedAt || 0) || 0; }
+
+function cloudPushNote(n) {
+  if (!cloud || !n) return;
+  cloud.setDoc(cloud.doc(cloud.db, NOTES_COL, n.id), JSON.parse(JSON.stringify(n))).catch(() => {});
+}
+function cloudDeleteNote(id) {
+  if (!cloud) return;
+  cloud.deleteDoc(cloud.doc(cloud.db, NOTES_COL, id)).catch(() => {});
+}
+function cloudPushState() {
+  if (!cloud) return;
+  lastStatePush = Date.now();
+  cloud.setDoc(cloud.doc(cloud.db, 'ezjobs_state', 'main'),
+    { favs: [...favSet], updatedAt: lastStatePush }, { merge: true }).catch(() => {});
+}
+
+function applyRemoteFavs(favArr) {
+  favSet = new Set(favArr || []);
+  LS.set('ezjobs_favs', [...favSet]);
+  let changed = false;
+  jobs.forEach(j => {
+    const f = favSet.has(j.id);
+    if (j.fav !== f) { j.fav = f; changed = true; if (!STATIC) persistFavsLocal(j.id, f); }
+  });
+  if (changed) renderJobs();
+}
+
+async function initCloud() {
+  if (cloud || cloudBusy) return;
+  cloudBusy = true;
+  try {
+    cloudPill('sync', '☁ connecting…');
+    const [appM, fsM, authM] = await Promise.all([
+      import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js'),
+      import('https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js'),
+      import('https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js'),
+    ]);
+    const fbApp = appM.getApps().length ? appM.getApp() : appM.initializeApp(firebaseConfig);
+    try { await authM.signInAnonymously(authM.getAuth(fbApp)); } catch (e) {}
+    const db = fsM.getFirestore(fbApp);
+    cloud = { db, doc: fsM.doc, collection: fsM.collection, getDocs: fsM.getDocs, getDoc: fsM.getDoc,
+              setDoc: fsM.setDoc, deleteDoc: fsM.deleteDoc, onSnapshot: fsM.onSnapshot };
+    await Promise.race([
+      reconcileCloud(),
+      new Promise((_, rej) => setTimeout(() => rej(new Error('Firestore not reachable')), 20000)),
+    ]);
+    listenCloud();
+    markSynced();
+  } catch (e) {
+    cloud = null;
+    cloudPill('off', '☁ local only');
+    console.warn('Cloud sync unavailable:', e.message || e);
+  } finally { cloudBusy = false; }
+}
+
+// first contact: two-way merge - newer updatedAt wins per note, favorites union
+async function reconcileCloud() {
+  const snap = await cloud.getDocs(cloud.collection(cloud.db, NOTES_COL));
+  const remote = new Map();
+  snap.forEach(d => remote.set(d.id, d.data()));
+  let localChanged = false;
+  // pull remote notes that are new or newer
+  for (const [id, rn] of remote) {
+    const ln = notes.find(n => n.id === id);
+    if (!ln) { notes.push(rn); localChanged = true; }
+    else if (noteTime(rn) > noteTime(ln)) { Object.assign(ln, rn); localChanged = true; }
+  }
+  // push local notes that are missing or newer remotely
+  for (const n of notes) {
+    const rn = remote.get(n.id);
+    if (!rn || noteTime(n) > noteTime(rn)) cloudPushNote(n);
+  }
+  if (localChanged) {
+    notes.sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''));
+    await persistNotesLocal();
+    renderNotes(); renderJobs();
+  }
+  // favorites: union both sides on first contact
+  const sref = cloud.doc(cloud.db, 'ezjobs_state', 'main');
+  const ssnap = await cloud.getDoc(sref);
+  const remoteFavs = ssnap.exists() ? (ssnap.data().favs || []) : [];
+  const before = favSet.size;
+  remoteFavs.forEach(id => favSet.add(id));
+  if (favSet.size !== before || !ssnap.exists()) cloudPushState();
+  applyRemoteFavs([...favSet]);
+}
+
+function listenCloud() {
+  cloudUnsubs.forEach(u => u()); cloudUnsubs = [];
+  // live notes: adopt newer versions, drop deletions
+  cloudUnsubs.push(cloud.onSnapshot(cloud.collection(cloud.db, NOTES_COL), snap => {
+    let changed = false;
+    snap.docChanges().forEach(ch => {
+      const id = ch.doc.id;
+      if (ch.type === 'removed') {
+        if (notes.some(n => n.id === id)) { notes = notes.filter(n => n.id !== id); changed = true; }
+      } else {
+        const rn = ch.doc.data();
+        const ln = notes.find(n => n.id === id);
+        if (!ln) { notes.unshift(rn); changed = true; }
+        else if (noteTime(rn) > noteTime(ln)) { Object.assign(ln, rn); changed = true; }
+      }
+    });
+    if (changed) { persistNotesLocal(); renderNotes(); renderJobs(); markSynced(); }
+  }, () => {}));
+  // live favorites (skip echoes of our own writes)
+  cloudUnsubs.push(cloud.onSnapshot(cloud.doc(cloud.db, 'ezjobs_state', 'main'), d => {
+    if (!d.exists()) return;
+    const data = d.data();
+    if (data.updatedAt && data.updatedAt !== lastStatePush) { applyRemoteFavs(data.favs); markSynced(); }
+  }, () => {}));
+}
+
+// ---------- backup / restore ----------
+function exportBackup() {
+  const blob = new Blob([JSON.stringify({ app: 'EZ JOBS', exportedAt: new Date().toISOString(), notes, favs: [...favSet] }, null, 2)],
+    { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'ezjobs-backup-' + today() + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+document.getElementById('importFile').onchange = async e => {
+  const file = e.target.files[0];
+  e.target.value = '';
+  if (!file) return;
+  try {
+    const backup = JSON.parse(await file.text());
+    if (backup.app !== 'EZ JOBS' || !Array.isArray(backup.notes)) throw new Error('bad file');
+    if (!confirm('Replace all applications/notes with this backup (' + backup.notes.length + ' entries)?')) return;
+    notes = backup.notes;
+    (backup.favs || []).forEach(id => favSet.add(id));
+    LS.set('ezjobs_favs', [...favSet]);
+    await persistNotesLocal();
+    notes.forEach(cloudPushNote);
+    cloudPushState();
+    renderNotes(); renderJobs();
+    alert('Backup restored ✓');
+  } catch (err) {
+    alert('Could not restore this file. Please choose a valid EZ JOBS backup.');
+  }
+};
 
 // ---------- init ----------
 if (STATIC) {
@@ -395,5 +582,5 @@ if (STATIC) {
   $('scanBtn').style.display = 'none';
 }
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
-loadNotes().then(loadJobs);
+loadNotes().then(loadJobs).then(initCloud);
 setInterval(loadJobs, 5 * 60 * 1000); // refresh every 5 min in case daily scan ran

@@ -85,6 +85,13 @@ app.post('/api/notes', (req, res) => {
   res.json(note);
 });
 
+// bulk replace - used by the cloud-sync layer to mirror the merged tracker
+app.put('/api/notes/bulk', (req, res) => {
+  if (!Array.isArray(req.body.notes)) return res.status(400).json({ error: 'notes array required' });
+  writeJson(NOTES_FILE, { notes: req.body.notes });
+  res.json({ ok: true, count: req.body.notes.length });
+});
+
 app.put('/api/notes/:id', (req, res) => {
   const store = readJson(NOTES_FILE, { notes: [] });
   const note = store.notes.find(n => n.id === req.params.id);
