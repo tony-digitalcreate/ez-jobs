@@ -1,0 +1,13 @@
+{
+  "name": "ez-jobs",
+  "version": "1.0.0",
+  "description": "EZ JOBS - daily 9am scan of Environmental / MEAL / M&E / Social-Environmental jobs in Vientiane Capital (108.jobs + web search) with an application tracker. Free & local.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  }
+}

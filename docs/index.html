@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EZ JOBS</title>
+<meta name="theme-color" content="#0e1f17">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-32.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root {
+  --bg: #0e1f17;
+  --card: #162b20;
+  --card2: #1c352a;
+  --line: #274437;
+  --text: #e8f5ee;
+  --dim: #8fb3a2;
+  --green: #34d399;
+  --green-dark: #059669;
+  --yellow: #fbbf24;
+  --red: #f87171;
+  --blue: #60a5fa;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg); color: var(--text);
+  min-height: 100vh; padding-bottom: 40px;
+}
+header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px 10px;
+  position: sticky; top: 0; background: var(--bg); z-index: 10;
+  border-bottom: 1px solid var(--line);
+}
+header img { width: 34px; height: 34px; border-radius: 8px; }
+header h1 { font-size: 20px; letter-spacing: 1px; }
+header h1 span { color: var(--green); }
+#lastScan { margin-left: auto; font-size: 11px; color: var(--dim); text-align: right; line-height: 1.35; }
+
+nav {
+  display: flex; gap: 8px; padding: 10px 16px;
+  position: sticky; top: 59px; background: var(--bg); z-index: 10;
+}
+nav button {
+  flex: 1; padding: 10px 0; font-size: 14px; font-weight: 600;
+  background: var(--card); color: var(--dim);
+  border: 1px solid var(--line); border-radius: 10px; cursor: pointer;
+}
+nav button.active { background: var(--green-dark); color: #fff; border-color: var(--green-dark); }
+nav button .badge {
+  background: var(--yellow); color: #222; border-radius: 10px;
+  font-size: 11px; padding: 1px 7px; margin-left: 6px; font-weight: 700;
+}
+
+main { padding: 12px 16px; max-width: 760px; margin: 0 auto; }
+
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.toolbar select, .toolbar input[type=text] {
+  background: var(--card); color: var(--text); border: 1px solid var(--line);
+  border-radius: 8px; padding: 8px 10px; font-size: 13px;
+}
+.toolbar input[type=text] { flex: 1; min-width: 120px; }
+.btn {
+  background: var(--green-dark); color: #fff; border: none; border-radius: 8px;
+  padding: 9px 14px; font-size: 13px; font-weight: 600; cursor: pointer;
+}
+.btn:disabled { opacity: .5; }
+.btn.ghost { background: var(--card); color: var(--dim); border: 1px solid var(--line); }
+.btn.danger { background: transparent; color: var(--red); border: 1px solid var(--line); }
+
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 13px 14px; margin-bottom: 10px;
+}
+.card.new { border-color: var(--green); }
+.job-top { display: flex; gap: 8px; align-items: flex-start; }
+.job-title { font-size: 15px; font-weight: 700; line-height: 1.3; }
+.job-title a { color: var(--text); text-decoration: none; }
+.job-title a:active, .job-title a:hover { color: var(--green); }
+.tag-new {
+  background: var(--green); color: #052e1c; font-size: 10px; font-weight: 800;
+  border-radius: 6px; padding: 2px 6px; margin-left: 6px; vertical-align: 2px;
+}
+.job-meta { font-size: 12px; color: var(--dim); margin-top: 5px; line-height: 1.5; }
+.job-meta b { color: var(--text); font-weight: 600; }
+.cats { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 5px; }
+.cat {
+  font-size: 10.5px; border: 1px solid var(--line); color: var(--dim);
+  border-radius: 20px; padding: 2px 9px;
+}
+.job-actions { display: flex; gap: 8px; margin-top: 10px; }
+.job-actions .btn { font-size: 12px; padding: 7px 12px; }
+.snippet { font-size: 12px; color: var(--dim); margin-top: 6px; font-style: italic; }
+
+.empty { text-align: center; color: var(--dim); padding: 40px 10px; font-size: 14px; line-height: 1.6; }
+
+/* notes */
+.note-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.note-grid label { font-size: 11px; color: var(--dim); display: block; margin-bottom: 3px; }
+.note-grid select, .note-grid input {
+  width: 100%; background: var(--card2); color: var(--text);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px; font-size: 13px;
+}
+.status-Applied { color: var(--blue); }
+.status-Interview { color: var(--yellow); }
+.status-Offer { color: var(--green); }
+.status-Rejected { color: var(--red); }
+textarea {
+  width: 100%; background: var(--card2); color: var(--text);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px;
+  font-size: 13px; font-family: inherit; resize: vertical; min-height: 44px; margin-top: 8px;
+}
+.note-head { display: flex; align-items: center; gap: 8px; }
+.note-head input.title-in {
+  flex: 1; background: transparent; border: none; color: var(--text);
+  font-size: 15px; font-weight: 700; outline: none;
+}
+.pill {
+  font-size: 11px; font-weight: 700; border-radius: 20px; padding: 3px 10px;
+  border: 1px solid var(--line); white-space: nowrap;
+}
+.saved-hint { font-size: 11px; color: var(--green); opacity: 0; transition: opacity .3s; }
+.saved-hint.show { opacity: 1; }
+#addNoteBtn { width: 100%; margin-bottom: 12px; padding: 12px; font-size: 14px; }
+.spin {
+  display: inline-block; width: 14px; height: 14px; border: 2px solid #fff5;
+  border-top-color: #fff; border-radius: 50%; animation: sp 1s linear infinite;
+  vertical-align: -2px; margin-right: 6px;
+}
+@keyframes sp { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon-192.png" alt="">
+  <h1>EZ <span>JOBS</span></h1>
+  <div id="lastScan"></div>
+</header>
+
+<nav>
+  <button id="tabJobsBtn" class="active" onclick="showTab('jobs')">🔍 Job Scanner<span id="newBadge"></span></button>
+  <button id="tabNotesBtn" onclick="showTab('notes')">📝 My Applications</button>
+</nav>
+
+<main>
+  <section id="tabJobs">
+    <div class="toolbar">
+      <input type="text" id="jobFilter" placeholder="Filter jobs..." oninput="renderJobs()">
+      <select id="srcFilter" onchange="renderJobs()">
+        <option value="">All sources</option>
+      </select>
+      <button class="btn" id="scanBtn" onclick="scanNow()">Scan Now</button>
+    </div>
+    <div id="jobList"></div>
+  </section>
+
+  <section id="tabNotes" style="display:none">
+    <button class="btn" id="addNoteBtn" onclick="addNote()">+ Add application / note</button>
+    <div id="noteList"></div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
