@@ -339,7 +339,7 @@
       "org": "108.jobs",
       "location": "Laos",
       "url": "https://108.jobs/job_detail/6a4f526dcaa5e2d3f733c564",
-      "closingDate": null,
+      "closingDate": "2026-07-21T17:00:00.000Z",
       "snippet": "Short-Term Consultancy Opportunity Open for Consultants based in Lao PDR (National or International) HELVETAS Laosis a development organization operating in Laos since 2001. Our vision is a just world in which all men and women determine the course of their lives in dignity and security, using envir",
       "categories": [
         "Environment",
@@ -348,23 +348,14 @@
       ],
       "firstSeen": "2026-07-22T07:27:39.257Z",
       "lastSeen": "2026-07-22T07:27:39.257Z",
-      "isNew": false
-    },
-    "web-aHR0cHM6Ly93d3cudW5ldmFs": {
-      "id": "web-aHR0cHM6Ly93d3cudW5ldmFs",
-      "source": "unevaluation.org",
-      "title": "National Monitoring and Evaluation Specialist | UNEG",
-      "org": "unevaluation.org",
-      "location": "Laos",
-      "url": "https://www.unevaluation.org/vacancy/national-monitoring-and-evaluation-specialist",
-      "closingDate": null,
-      "snippet": "The incumbent will be primarily focused to strengthen FAO monitoring and evaluation systems and improve the effectiveness of FAO projects in Laos through technical expertise, capacity building and advocacy.",
-      "categories": [
-        "MEAL / M&E"
-      ],
-      "firstSeen": "2026-07-22T07:49:11.202Z",
-      "lastSeen": "2026-07-22T07:49:11.202Z",
-      "isNew": true
+      "isNew": false,
+      "verifiedAt": "2026-07-22T11:52:18.025Z"
     }
+  },
+  "stale": {
+    "web-aHR0cHM6Ly91bmpvYnMub3Jn": "2026-07-22T11:52:18.025Z",
+    "web-aHR0cHM6Ly91bmRwam9icy5u": "2026-07-22T11:52:18.025Z",
+    "web-aHR0cHM6Ly9sYS5saW5rZWRp": "2026-07-22T11:52:18.025Z",
+    "web-aHR0cHM6Ly93d3cudW5ldmFs": "2026-07-22T11:52:18.025Z"
   }
 }

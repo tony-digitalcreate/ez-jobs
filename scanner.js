@@ -66,6 +66,47 @@ function isFresh(job) {
   return true;
 }
 
+// ---- deep verification: fetch a web result's page and judge from its real dates ----
+const MONTH_RE = '(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*';
+function extractDates(text) {
+  const out = [];
+  for (const m of text.matchAll(/\b(20\d{2})-(\d{2})-(\d{2})\b/g)) out.push(new Date(+m[1], +m[2] - 1, +m[3]));
+  for (const m of text.matchAll(new RegExp(`\\b(\\d{1,2})\\s+(${MONTH_RE})\\.?,?\\s+(20\\d{2})\\b`, 'gi')))
+    out.push(new Date(`${m[2].slice(0, 3)} ${m[1]} ${m[3]}`));
+  for (const m of text.matchAll(new RegExp(`\\b(${MONTH_RE})\\.?\\s+(\\d{1,2}),?\\s+(20\\d{2})\\b`, 'gi')))
+    out.push(new Date(`${m[1].slice(0, 3)} ${m[2]} ${m[3]}`));
+  return out.filter(d => !isNaN(d) && d.getFullYear() > 2015 && d.getFullYear() < 2100);
+}
+
+// fetches the job page; returns {fresh, closingDate?}. Lenient: unreachable/odd pages pass.
+async function verifyWebJob(job) {
+  try {
+    const res = await fetchWithTimeout(job.url, {}, 15000);
+    if (!res.ok) return { fresh: true };
+    const html = (await res.text()).replace(/<[^>]+>/g, ' ');
+    const now = Date.now();
+    const dl = [], posted = [];
+    // dates sitting next to deadline-ish words (incl. JSON-LD validThrough/datePosted)
+    for (const m of html.matchAll(/(deadline|closing date|validThrough|apply before|apply by|expires?|close[sd]? on)/gi))
+      dl.push(...extractDates(html.slice(Math.max(0, m.index - 60), m.index + 160)));
+    for (const m of html.matchAll(/(datePosted|posted|published|date issued|opening date)/gi))
+      posted.push(...extractDates(html.slice(Math.max(0, m.index - 60), m.index + 160)));
+    if (dl.length) {
+      const latest = Math.max(...dl.map(d => d.getTime()));
+      if (latest < now - 7 * 24 * 3600 * 1000) return { fresh: false };
+      return { fresh: true, closingDate: new Date(latest).toISOString() };
+    }
+    if (posted.length) {
+      const latest = Math.max(...posted.map(d => d.getTime()));
+      return { fresh: latest > now - 90 * 24 * 3600 * 1000 };
+    }
+    const all = extractDates(html);
+    if (all.length && Math.max(...all.map(d => d.getTime())) < now - 120 * 24 * 3600 * 1000)
+      return { fresh: false };
+    return { fresh: true };
+  } catch { return { fresh: true }; }
+}
+
 // which of her interest categories does this text hit?
 function matchCategories(text) {
   const t = ' ' + String(text || '').toLowerCase() + ' ';
@@ -198,14 +239,50 @@ async function runScan(trigger = 'manual') {
   if (r108.status === 'fulfilled') results.push(...r108.value); else console.error('[scan] 108.jobs failed entirely:', r108.reason);
   if (rweb.status === 'fulfilled') results.push(...rweb.value); else console.error('[scan] web search failed entirely:', rweb.reason);
 
+  // stale blocklist: web URLs already verified as old postings - never re-add
+  store.stale = store.stale || {};
+  const nowMs = Date.now();
+  for (const [id, t] of Object.entries(store.stale)) {
+    if (nowMs - new Date(t).getTime() > 60 * 24 * 3600 * 1000) delete store.stale[id];
+  }
+
   let added = 0;
   for (const job of results) {
+    if (store.stale[job.id]) continue;
     if (store.jobs[job.id]) {
       Object.assign(store.jobs[job.id], job, { lastSeen: now });
     } else {
+      // web results carry no closing date - fetch the page and check its real dates
+      if (job.id.startsWith('web-')) {
+        const v = await verifyWebJob(job);
+        if (!v.fresh) {
+          console.log('[scan] stale posting rejected:', job.title, '(' + job.url + ')');
+          store.stale[job.id] = now;
+          continue;
+        }
+        if (v.closingDate) job.closingDate = v.closingDate;
+        job.verifiedAt = now;
+        await new Promise(r => setTimeout(r, 400));
+      }
       store.jobs[job.id] = { ...job, firstSeen: now, lastSeen: now, isNew: true };
       added++;
     }
+  }
+
+  // re-verify stored web jobs weekly; drop the ones that turned stale
+  for (const [id, j] of Object.entries(store.jobs)) {
+    if (!id.startsWith('web-') || j.fav) continue;
+    if (j.verifiedAt && nowMs - new Date(j.verifiedAt).getTime() < 7 * 24 * 3600 * 1000) continue;
+    const v = await verifyWebJob(j);
+    if (!v.fresh) {
+      console.log('[scan] stored job went stale, removing:', j.title);
+      store.stale[id] = now;
+      delete store.jobs[id];
+    } else {
+      if (v.closingDate) j.closingDate = v.closingDate;
+      j.verifiedAt = now;
+    }
+    await new Promise(r => setTimeout(r, 400));
   }
 
   // prune: 60 days unseen, expired, or dated last-year - but never favorites
