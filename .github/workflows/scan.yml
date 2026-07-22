@@ -2,7 +2,9 @@ name: Daily job scan
 
 on:
   schedule:
-    - cron: '0 2 * * *'   # 02:00 UTC = 9:00 AM Laos time (UTC+7)
+    # every 4 hours, anchored on 9:00 AM Laos time (UTC+7):
+    # 02,06,10,14,18,22 UTC = 09:00, 13:00, 17:00, 21:00, 01:00, 05:00 Laos
+    - cron: '0 2,6,10,14,18,22 * * *'
   workflow_dispatch:       # manual "Run workflow" button on GitHub
 
 permissions:

@@ -114,20 +114,16 @@ app.delete('/api/notes/:id', (req, res) => {
   res.json({ ok: true });
 });
 
-// ---- daily scan at 9:00 AM ----
-cron.schedule('0 9 * * *', () => safeScan('daily-9am'));
+// ---- scan every 4 hours (9am, 1pm, 5pm, 9pm, 1am, 5am local) ----
+cron.schedule('0 1,5,9,13,17,21 * * *', () => safeScan('4-hourly'));
 
-// catch-up: if the PC was off at 9am, scan on startup when today's 9am scan was missed
+// catch-up: if the PC was off for a scheduled scan, run one when it's been 4+ hours
 function catchUp() {
   const meta = readJson(META_FILE, {});
-  const now = new Date();
-  const nineAmToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 0, 0);
-  const last = meta.lastScan ? new Date(meta.lastScan) : null;
-  if (now >= nineAmToday && (!last || last < nineAmToday)) {
-    console.log('[scan] catch-up: missed today\'s 9am scan, running now');
-    safeScan('catch-up');
-  } else if (!last) {
-    safeScan('first-run');
+  const last = meta.lastScan ? new Date(meta.lastScan).getTime() : 0;
+  if (Date.now() - last > 4 * 3600 * 1000) {
+    console.log('[scan] catch-up: last scan was over 4h ago, running now');
+    safeScan(last ? 'catch-up' : 'first-run');
   }
 }
 

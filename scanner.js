@@ -16,12 +16,14 @@ const KEYWORD_GROUPS = {
   'MEAL / M&E': ['meal', 'm&e', 'monitoring and evaluation', 'monitoring & evaluation', 'monitoring, evaluation', 'evaluation officer', 'mel officer', 'accountability and learning'],
   'Social / Safeguards': ['safeguard', 'social development', 'social officer', 'social performance', 'community development', 'gender', 'livelihood', 'social impact'],
   'Consultant / NGO': ['consultant', 'programme officer', 'program officer', 'project officer', 'ngo', 'development officer', 'sustainability'],
+  'Agriculture': ['agriculture', 'agricultural', 'agri-', 'agroforestry', 'agronomy', 'farming', 'forestry', 'fisheries', 'livestock', 'food security', 'rural development', 'irrigation', 'crop', 'value chain'],
 };
 
 // searches run against the 108.jobs title index (their API matches title only)
 const JOB108_TITLE_QUERIES = [
   'environment', 'environmental', 'MEAL', 'monitoring', 'evaluation',
   'safeguard', 'social', 'consultant', 'climate', 'sustainability', 'community',
+  'agri', 'forestry', 'fisheries', 'livestock', 'farm',
 ];
 
 // web search queries (DuckDuckGo HTML endpoint - carries Google-indexed NGO/UN/LinkedIn pages)
@@ -34,6 +36,8 @@ const WEB_QUERIES = [
   'site:reliefweb.int/job "Lao People\'s Democratic Republic"',
   'site:la.linkedin.com/jobs environment OR MEAL OR evaluation Vientiane',
   'NGO job Vientiane environment "monitoring"',
+  'agriculture OR forestry officer vacancy Vientiane Laos',
+  '"food security" OR "rural development" job Vientiane Lao PDR',
 ];
 
 // hosts that are never job postings
@@ -45,6 +49,21 @@ function readJson(file, fallback) {
 function writeJson(file, obj) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, JSON.stringify(obj, null, 2));
+}
+
+// freshness: reject expired or clearly old postings (he saw a 2025 job resurface)
+function isFresh(job) {
+  // jobs with a closing date: expired more than 7 days ago = stale
+  if (job.closingDate) {
+    return new Date(job.closingDate).getTime() > Date.now() - 7 * 24 * 3600 * 1000;
+  }
+  // web results have no closing date - look for "Jul 2025"-style dates in title/snippet;
+  // if every dated mention is from a previous year, the posting is old news
+  const text = job.title + ' ' + (job.snippet || '');
+  const monthYears = [...text.matchAll(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?,?\s+(20\d{2})\b/gi)]
+    .map(m => +m[1]);
+  if (monthYears.length && Math.max(...monthYears) < new Date().getFullYear()) return false;
+  return true;
 }
 
 // which of her interest categories does this text hit?
@@ -85,6 +104,8 @@ async function scan108() {
       const data = await res.json();
       for (const j of data.allJob || []) {
         if (!j || j.type === 'ads' || !j.title || !j._id) continue;
+        // skip already-closed postings
+        if (j.closingDate && new Date(j.closingDate).getTime() < Date.now()) continue;
         const cats = matchCategories(j.title + ' ' + (j.jobFunctionId || []).map(f => f.name).join(' '));
         if (!cats.length) continue;
         found.set(j._id, {
@@ -122,7 +143,8 @@ async function scanWeb() {
   const found = new Map();
   for (const q of WEB_QUERIES) {
     try {
-      const res = await fetchWithTimeout('https://html.duckduckgo.com/html/?q=' + encodeURIComponent(q));
+      // df=m restricts results to pages indexed in the past month - keeps postings current
+      const res = await fetchWithTimeout('https://html.duckduckgo.com/html/?q=' + encodeURIComponent(q) + '&df=m');
       if (!res.ok) continue;
       const html = await res.text();
       // each result: <a class="result__a" href="...">title</a> ... <a class="result__snippet"...>snippet</a>
@@ -144,6 +166,7 @@ async function scanWeb() {
         if (!/vientiane|laos|lao pdr|lao people/i.test(all + ' ' + url)) continue;
         const key = url.replace(/[?#].*$/, '').replace(/\/$/, '').toLowerCase();
         if (found.has(key)) continue;
+        if (!isFresh({ title, snippet })) continue; // old posting from a previous year
         found.set(key, {
           id: 'web-' + Buffer.from(key).toString('base64url').slice(0, 24),
           source: host,
@@ -185,10 +208,11 @@ async function runScan(trigger = 'manual') {
     }
   }
 
-  // stale jobs get dropped after 60 days unseen - but never favorites
+  // prune: 60 days unseen, expired, or dated last-year - but never favorites
   const cutoff = Date.now() - 60 * 24 * 3600 * 1000;
   for (const [id, j] of Object.entries(store.jobs)) {
-    if (!j.fav && new Date(j.lastSeen).getTime() < cutoff) delete store.jobs[id];
+    if (j.fav) continue;
+    if (new Date(j.lastSeen).getTime() < cutoff || !isFresh(j)) delete store.jobs[id];
   }
 
   writeJson(JOBS_FILE, store);
