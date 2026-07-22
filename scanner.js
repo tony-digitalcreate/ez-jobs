@@ -185,10 +185,10 @@ async function runScan(trigger = 'manual') {
     }
   }
 
-  // expired 108 jobs (past closing date) get dropped after 60 days unseen
+  // stale jobs get dropped after 60 days unseen - but never favorites
   const cutoff = Date.now() - 60 * 24 * 3600 * 1000;
   for (const [id, j] of Object.entries(store.jobs)) {
-    if (new Date(j.lastSeen).getTime() < cutoff) delete store.jobs[id];
+    if (!j.fav && new Date(j.lastSeen).getTime() < cutoff) delete store.jobs[id];
   }
 
   writeJson(JOBS_FILE, store);

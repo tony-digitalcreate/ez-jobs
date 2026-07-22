@@ -1,5 +1,5 @@
 // EZ JOBS service worker - cache app shell, network-first for API
-const CACHE = 'ezjobs-v1';
+const CACHE = 'ezjobs-v2'; // bumped: blue theme + favorites + status timeline
 const SHELL = ['./', 'index.html', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {

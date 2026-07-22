@@ -42,6 +42,15 @@ app.post('/api/jobs/seen', (req, res) => {
   res.json({ ok: true });
 });
 
+app.put('/api/jobs/:id/fav', (req, res) => {
+  const store = readJson(JOBS_FILE, { jobs: {} });
+  const job = store.jobs[req.params.id];
+  if (!job) return res.status(404).json({ error: 'not found' });
+  job.fav = !!req.body.fav;
+  writeJson(JOBS_FILE, store);
+  res.json({ ok: true, fav: job.fav });
+});
+
 app.delete('/api/jobs/:id', (req, res) => {
   const store = readJson(JOBS_FILE, { jobs: {} });
   delete store.jobs[req.params.id];
@@ -65,6 +74,9 @@ app.post('/api/notes', (req, res) => {
     feedback: String(req.body.feedback || 'No'),
     salary: String(req.body.salary || '').slice(0, 100),
     note: String(req.body.note || '').slice(0, 2000),
+    statusDates: (req.body.statusDates && typeof req.body.statusDates === 'object')
+      ? req.body.statusDates
+      : { [String(req.body.status || 'Saved')]: new Date().toISOString().slice(0, 10) },
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
@@ -79,6 +91,9 @@ app.put('/api/notes/:id', (req, res) => {
   if (!note) return res.status(404).json({ error: 'not found' });
   for (const k of ['title', 'org', 'url', 'status', 'feedback', 'salary', 'note']) {
     if (req.body[k] !== undefined) note[k] = String(req.body[k]);
+  }
+  if (req.body.statusDates && typeof req.body.statusDates === 'object') {
+    note.statusDates = req.body.statusDates;
   }
   note.updatedAt = new Date().toISOString();
   writeJson(NOTES_FILE, store);
