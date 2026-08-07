@@ -156,7 +156,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-23T08:06:27.034Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a62f3e9ed9fe200864bbefa": {
@@ -172,7 +172,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-24T08:02:59.653Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a62f3f3ed9fe200864bc38a": {
@@ -187,7 +187,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-24T08:02:59.653Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JzLnVuaWNl": {
@@ -273,7 +273,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T09:21:38.584Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a670a910a26137b9952041d": {
@@ -288,7 +288,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T09:21:38.584Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a673c030a26137b996ac04e": {
@@ -304,7 +304,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T12:47:24.944Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a6820f4a9e5e1ef9de4894f": {
@@ -321,7 +321,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-07-28T04:50:34.984Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a6863273bc8c31f454a4d2e": {
@@ -336,7 +336,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-28T08:09:46.446Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a705f859de6eb77a91a4c97": {
@@ -352,7 +352,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -368,7 +368,24 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-08-06T23:46:19.838Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
+      "isNew": true
+    },
+    "web-aHR0cHM6Ly93d3cudndiLm9y": {
+      "id": "web-aHR0cHM6Ly93d3cudndiLm9y",
+      "source": "vwb.org",
+      "title": "Monitoring and Evaluation Advisor | CARE - Laos",
+      "org": "vwb.org",
+      "location": "Vientiane",
+      "url": "https://www.vwb.org/site/volunteer/monitoring-and-evaluation-advisor-care-laos",
+      "closingDate": null,
+      "snippet": "Volunteer Placement Details Position Title: Monitoring and Evaluation Advisor Country: Laos Location: Vientiane Partner Organization: CARE International Laos Duration: 6 months + (flexible) Start Date: As soon as possible Pre-departure Training: VWB/VSF will provide training orientation. Eligibility",
+      "categories": [
+        "MEAL / M&E"
+      ],
+      "verifiedAt": "2026-08-07T04:16:38.446Z",
+      "firstSeen": "2026-08-07T04:16:38.446Z",
+      "lastSeen": "2026-08-07T04:16:38.446Z",
       "isNew": true
     }
   },
@@ -380,6 +397,7 @@
     "web-aHR0cHM6Ly93d3cudGVhbGhx": "2026-07-22T11:57:59.472Z",
     "web-aHR0cHM6Ly91bnRhbGVudC5v": "2026-07-25T18:45:16.341Z",
     "web-aHR0cHM6Ly91bml0ZWRuYXRp": "2026-07-30T22:54:05.766Z",
-    "web-aHR0cHM6Ly93d3cuaW1wYWN0": "2026-08-01T18:48:16.900Z"
+    "web-aHR0cHM6Ly93d3cuaW1wYWN0": "2026-08-01T18:48:16.900Z",
+    "web-aHR0cHM6Ly93d3cuc2F2ZXRo": "2026-08-07T04:16:38.446Z"
   }
 }
