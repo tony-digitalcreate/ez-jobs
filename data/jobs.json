@@ -1,22 +1,5 @@
 {
   "jobs": {
-    "108-6a5852ccc9e29e809ef0e053": {
-      "id": "108-6a5852ccc9e29e809ef0e053",
-      "source": "108.jobs",
-      "title": "National Environmental Safeguard Consultant",
-      "org": "Lao PDR Pollution and Waste Management Project (PWMP)",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a5852ccc9e29e809ef0e053",
-      "closingDate": "2026-07-31T16:59:59.999Z",
-      "categories": [
-        "Environment",
-        "Social / Safeguards",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-22T07:27:39.257Z",
-      "lastSeen": "2026-07-31T15:51:51.261Z",
-      "isNew": false
-    },
     "108-6a461f326d63ca08a9a1bd76": {
       "id": "108-6a461f326d63ca08a9a1bd76",
       "source": "108.jobs",
@@ -49,23 +32,6 @@
       "isNew": false,
       "fav": true
     },
-    "108-6a5852d6c9e29e809ef0e3f0": {
-      "id": "108-6a5852d6c9e29e809ef0e3f0",
-      "source": "108.jobs",
-      "title": "National Social Safeguard Consultant",
-      "org": "Lao PDR Pollution and Waste Management Project (PWMP)",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a5852d6c9e29e809ef0e3f0",
-      "closingDate": "2026-07-31T16:59:59.999Z",
-      "categories": [
-        "Environment",
-        "Social / Safeguards",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-22T07:27:39.257Z",
-      "lastSeen": "2026-07-31T15:51:51.261Z",
-      "isNew": false
-    },
     "108-6a59a7d21a022d107ad595f5": {
       "id": "108-6a59a7d21a022d107ad595f5",
       "source": "108.jobs",
@@ -96,21 +62,6 @@
       "lastSeen": "2026-08-03T16:12:48.561Z",
       "isNew": false
     },
-    "108-6a59f8a35c50dd4f6d3f8164": {
-      "id": "108-6a59f8a35c50dd4f6d3f8164",
-      "source": "108.jobs",
-      "title": "National Procurement Consultant",
-      "org": "MINISTRY OF INDUSTRY AND COMMERCE (NATIONAL IMPLEMENTATION UNIT)",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a59f8a35c50dd4f6d3f8164",
-      "closingDate": "2026-07-31T16:59:59.000Z",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-22T07:27:39.257Z",
-      "lastSeen": "2026-07-31T15:51:51.261Z",
-      "isNew": false
-    },
     "108-6a6040de5c50dd4f6d617a0a": {
       "id": "108-6a6040de5c50dd4f6d617a0a",
       "source": "108.jobs",
@@ -128,21 +79,6 @@
       "lastSeen": "2026-08-05T15:52:29.083Z",
       "isNew": false
     },
-    "108-6a589031c9e29e809e084eef": {
-      "id": "108-6a589031c9e29e809e084eef",
-      "source": "108.jobs",
-      "title": "Project and Admin Support - Consultant (Lao National)",
-      "org": "Population Services International (PSI) Laos",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a589031c9e29e809e084eef",
-      "closingDate": "2026-07-31T16:59:59.000Z",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-22T07:27:39.257Z",
-      "lastSeen": "2026-07-31T15:51:51.261Z",
-      "isNew": false
-    },
     "108-6a61bb1e5c50dd4f6dcffbe3": {
       "id": "108-6a61bb1e5c50dd4f6dcffbe3",
       "source": "108.jobs",
@@ -156,7 +92,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-23T08:06:27.034Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a62f3e9ed9fe200864bbefa": {
@@ -172,7 +108,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-24T08:02:59.653Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a62f3f3ed9fe200864bc38a": {
@@ -187,7 +123,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-24T08:02:59.653Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JzLnVuaWNl": {
@@ -273,7 +209,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T09:21:38.584Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a670a910a26137b9952041d": {
@@ -288,7 +224,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T09:21:38.584Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a673c030a26137b996ac04e": {
@@ -304,7 +240,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T12:47:24.944Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a6820f4a9e5e1ef9de4894f": {
@@ -321,7 +257,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-07-28T04:50:34.984Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a6863273bc8c31f454a4d2e": {
@@ -336,7 +272,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-28T08:09:46.446Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a705f859de6eb77a91a4c97": {
@@ -352,7 +288,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-07T14:43:17.410Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -385,7 +321,7 @@
       ],
       "verifiedAt": "2026-08-07T04:16:38.446Z",
       "firstSeen": "2026-08-07T04:16:38.446Z",
-      "lastSeen": "2026-08-07T10:39:41.018Z",
+      "lastSeen": "2026-08-07T18:35:49.155Z",
       "isNew": true
     }
   },
