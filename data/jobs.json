@@ -1,20 +1,5 @@
 {
   "jobs": {
-    "108-6a461f326d63ca08a9a1bd76": {
-      "id": "108-6a461f326d63ca08a9a1bd76",
-      "source": "108.jobs",
-      "title": "Environmental Engineer",
-      "org": "AMATA CITY LAO CO., LTD",
-      "location": "Vientiane Capital, Oudomxay Province, Luang Namtha",
-      "url": "https://108.jobs/job_detail/6a461f326d63ca08a9a1bd76",
-      "closingDate": "2026-08-01T16:59:59.000Z",
-      "categories": [
-        "Environment"
-      ],
-      "firstSeen": "2026-07-22T07:27:39.257Z",
-      "lastSeen": "2026-08-01T14:50:33.142Z",
-      "isNew": false
-    },
     "108-6a58945cc9e29e809e0a4a4c": {
       "id": "108-6a58945cc9e29e809e0a4a4c",
       "source": "108.jobs",
@@ -31,21 +16,6 @@
       "lastSeen": "2026-07-30T15:44:42.547Z",
       "isNew": false,
       "fav": true
-    },
-    "108-6a59a7d21a022d107ad595f5": {
-      "id": "108-6a59a7d21a022d107ad595f5",
-      "source": "108.jobs",
-      "title": "Senior Tax Consultant",
-      "org": "VDB Loi Co., Ltd",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a59a7d21a022d107ad595f5",
-      "closingDate": "2026-08-01T16:59:59.999Z",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-22T07:27:39.257Z",
-      "lastSeen": "2026-08-01T14:50:33.142Z",
-      "isNew": false
     },
     "108-6a2f9d0ec07d621a2373401a": {
       "id": "108-6a2f9d0ec07d621a2373401a",
@@ -92,7 +62,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-23T08:06:27.034Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a62f3e9ed9fe200864bbefa": {
@@ -209,7 +179,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T09:21:38.584Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a670a910a26137b9952041d": {
@@ -224,7 +194,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T09:21:38.584Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a673c030a26137b996ac04e": {
@@ -240,7 +210,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T12:47:24.944Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a6820f4a9e5e1ef9de4894f": {
@@ -257,7 +227,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-07-28T04:50:34.984Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a6863273bc8c31f454a4d2e": {
@@ -272,7 +242,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-28T08:09:46.446Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a705f859de6eb77a91a4c97": {
@@ -288,7 +258,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -304,7 +274,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
+      "lastSeen": "2026-08-08T18:18:40.668Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
