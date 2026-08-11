@@ -47,7 +47,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-23T08:06:27.034Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "108-6a62f3e9ed9fe200864bbefa": {
@@ -113,7 +113,7 @@
       ],
       "verifiedAt": "2026-08-08T22:14:50.981Z",
       "firstSeen": "2026-07-25T18:45:16.341Z",
-      "lastSeen": "2026-07-31T05:21:06.319Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly91bmNhcmVlci5u": {
@@ -130,7 +130,7 @@
       ],
       "verifiedAt": "2026-08-08T22:14:50.981Z",
       "firstSeen": "2026-07-25T18:45:16.341Z",
-      "lastSeen": "2026-08-09T10:20:10.751Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2Jib2FyZC5j": {
@@ -195,7 +195,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-27T12:47:24.944Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "108-6a6820f4a9e5e1ef9de4894f": {
@@ -212,7 +212,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-07-28T04:50:34.984Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "108-6a6863273bc8c31f454a4d2e": {
@@ -227,7 +227,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-07-28T08:09:46.446Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "108-6a705f859de6eb77a91a4c97": {
@@ -243,7 +243,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -259,7 +259,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
@@ -308,7 +308,23 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-10T10:54:29.168Z",
-      "lastSeen": "2026-08-10T22:23:44.440Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
+      "isNew": true
+    },
+    "108-6a7a8917c04bc0f849b4fc88": {
+      "id": "108-6a7a8917c04bc0f849b4fc88",
+      "source": "108.jobs",
+      "title": "Monitoring and Evaluation Officer",
+      "org": "Health Poverty Action (HPA)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a7a8917c04bc0f849b4fc88",
+      "closingDate": "2026-08-26T16:59:59.999Z",
+      "categories": [
+        "MEAL / M&E",
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-08-11T03:24:12.959Z",
+      "lastSeen": "2026-08-11T03:24:12.959Z",
       "isNew": true
     }
   },
