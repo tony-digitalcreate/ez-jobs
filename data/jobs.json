@@ -96,7 +96,7 @@
       ],
       "verifiedAt": "2026-08-08T22:14:50.981Z",
       "firstSeen": "2026-07-25T18:45:16.341Z",
-      "lastSeen": "2026-08-11T03:24:12.959Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly91bmNhcmVlci5u": {
@@ -113,7 +113,7 @@
       ],
       "verifiedAt": "2026-08-08T22:14:50.981Z",
       "firstSeen": "2026-07-25T18:45:16.341Z",
-      "lastSeen": "2026-08-11T03:24:12.959Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2Jib2FyZC5j": {
@@ -226,7 +226,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-13T18:43:40.319Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -291,7 +291,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-10T10:54:29.168Z",
-      "lastSeen": "2026-08-13T18:43:40.319Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
       "isNew": true
     },
     "108-6a7a8917c04bc0f849b4fc88": {
@@ -307,7 +307,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-11T03:24:12.959Z",
-      "lastSeen": "2026-08-13T18:43:40.319Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
       "isNew": true
     },
     "108-6a7ad3c3c04bc0f849d92158": {
@@ -322,7 +322,24 @@
         "Environment"
       ],
       "firstSeen": "2026-08-11T18:42:27.150Z",
-      "lastSeen": "2026-08-13T18:43:40.319Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
+      "isNew": true
+    },
+    "web-aHR0cHM6Ly9hbGktc2VhLm9y": {
+      "id": "web-aHR0cHM6Ly9hbGktc2VhLm9y",
+      "source": "ali-sea.org",
+      "title": "External Consultant for Final Evaluation of the Project",
+      "org": "ali-sea.org",
+      "location": "Laos",
+      "url": "https://ali-sea.org/jobs/external-consultant-for-final-evaluation-of-the-project/",
+      "closingDate": null,
+      "snippet": "How to apply: Email souphanny.laos@gret.org with the subject line &quot;Final Evaluation - WISE LPB 2026,&quot; including CV (s), technical proposal (max 5 pages), financial proposal, and one sample evaluation report.",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "verifiedAt": "2026-08-13T22:28:18.165Z",
+      "firstSeen": "2026-08-13T22:28:18.165Z",
+      "lastSeen": "2026-08-13T22:28:18.165Z",
       "isNew": true
     }
   },
