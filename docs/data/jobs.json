@@ -227,7 +227,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-14T07:03:30.234Z",
+      "lastSeen": "2026-08-14T10:44:55.665Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -243,7 +243,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-08-14T07:03:30.234Z",
+      "lastSeen": "2026-08-14T10:44:55.665Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
@@ -292,7 +292,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-10T10:54:29.168Z",
-      "lastSeen": "2026-08-14T07:03:30.234Z",
+      "lastSeen": "2026-08-14T10:44:55.665Z",
       "isNew": true
     },
     "108-6a7a8917c04bc0f849b4fc88": {
@@ -308,7 +308,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-11T03:24:12.959Z",
-      "lastSeen": "2026-08-14T07:03:30.234Z",
+      "lastSeen": "2026-08-14T10:44:55.665Z",
       "isNew": true
     },
     "108-6a7ad3c3c04bc0f849d92158": {
@@ -323,7 +323,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-11T18:42:27.150Z",
-      "lastSeen": "2026-08-14T07:03:30.234Z",
+      "lastSeen": "2026-08-14T10:44:55.665Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9hbGktc2VhLm9y": {
@@ -341,6 +341,22 @@
       "verifiedAt": "2026-08-13T22:28:18.165Z",
       "firstSeen": "2026-08-13T22:28:18.165Z",
       "lastSeen": "2026-08-14T07:03:30.234Z",
+      "isNew": true
+    },
+    "108-6a7ec11ac04bc0f849d7d07b": {
+      "id": "108-6a7ec11ac04bc0f849d7d07b",
+      "source": "108.jobs",
+      "title": "Providing engineering design, environmental safeguards and construction supervision for establishment of circular economy in healthcare waste management system in Xieng Khouang Province, Lao PDR",
+      "org": "",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a7ec11ac04bc0f849d7d07b",
+      "closingDate": "2026-08-31T16:59:59.000Z",
+      "categories": [
+        "Environment",
+        "Social / Safeguards"
+      ],
+      "firstSeen": "2026-08-14T10:44:55.665Z",
+      "lastSeen": "2026-08-14T10:44:55.665Z",
       "isNew": true
     }
   },
