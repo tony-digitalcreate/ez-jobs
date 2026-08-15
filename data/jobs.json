@@ -33,37 +33,6 @@
       "lastSeen": "2026-08-13T14:49:08.988Z",
       "isNew": true
     },
-    "108-6a62f3e9ed9fe200864bbefa": {
-      "id": "108-6a62f3e9ed9fe200864bbefa",
-      "source": "108.jobs",
-      "title": "National Environment and Social Consultant Preparation of Environment and Social Framework",
-      "org": "Lao Statistics Bureau",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a62f3e9ed9fe200864bbefa",
-      "closingDate": "2026-08-08T16:59:59.000Z",
-      "categories": [
-        "Environment",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-24T08:02:59.653Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
-      "isNew": true
-    },
-    "108-6a62f3f3ed9fe200864bc38a": {
-      "id": "108-6a62f3f3ed9fe200864bc38a",
-      "source": "108.jobs",
-      "title": "National Communications Consultant",
-      "org": "Lao Statistics Bureau",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6a62f3f3ed9fe200864bc38a",
-      "closingDate": "2026-08-08T16:59:59.000Z",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-07-24T08:02:59.653Z",
-      "lastSeen": "2026-08-08T14:20:35.495Z",
-      "isNew": true
-    },
     "web-aHR0cHM6Ly9qb2JzLnVuaWNl": {
       "id": "web-aHR0cHM6Ly9qb2JzLnVuaWNl",
       "source": "jobs.unicef.org",
@@ -227,7 +196,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-03T12:47:06.784Z",
-      "lastSeen": "2026-08-15T14:09:40.319Z",
+      "lastSeen": "2026-08-15T18:10:23.607Z",
       "isNew": true
     },
     "108-6a715f519de6eb77a951cbb7": {
@@ -243,7 +212,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-08-15T14:09:40.319Z",
+      "lastSeen": "2026-08-15T18:10:23.607Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
@@ -292,7 +261,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-10T10:54:29.168Z",
-      "lastSeen": "2026-08-15T14:09:40.319Z",
+      "lastSeen": "2026-08-15T18:10:23.607Z",
       "isNew": true
     },
     "108-6a7a8917c04bc0f849b4fc88": {
@@ -308,7 +277,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-11T03:24:12.959Z",
-      "lastSeen": "2026-08-15T14:09:40.319Z",
+      "lastSeen": "2026-08-15T18:10:23.607Z",
       "isNew": true
     },
     "108-6a7ad3c3c04bc0f849d92158": {
@@ -323,7 +292,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-11T18:42:27.150Z",
-      "lastSeen": "2026-08-15T14:09:40.319Z",
+      "lastSeen": "2026-08-15T18:10:23.607Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9hbGktc2VhLm9y": {
@@ -356,7 +325,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-08-14T10:44:55.665Z",
-      "lastSeen": "2026-08-15T10:09:45.904Z",
+      "lastSeen": "2026-08-15T18:10:23.607Z",
       "isNew": true
     }
   },
