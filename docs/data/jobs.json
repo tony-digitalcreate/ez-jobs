@@ -146,7 +146,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-08-19T02:47:21.812Z",
+      "lastSeen": "2026-08-19T06:21:34.005Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
@@ -211,7 +211,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-11T03:24:12.959Z",
-      "lastSeen": "2026-08-19T02:47:21.812Z",
+      "lastSeen": "2026-08-19T06:21:34.005Z",
       "isNew": true
     },
     "108-6a7ad3c3c04bc0f849d92158": {
@@ -226,7 +226,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-11T18:42:27.150Z",
-      "lastSeen": "2026-08-19T02:47:21.812Z",
+      "lastSeen": "2026-08-19T06:21:34.005Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9hbGktc2VhLm9y": {
@@ -259,7 +259,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-08-14T10:44:55.665Z",
-      "lastSeen": "2026-08-18T22:09:34.525Z",
+      "lastSeen": "2026-08-19T06:21:34.005Z",
       "isNew": true
     },
     "108-6a82ae6cc04bc0f8498b1616": {
@@ -274,7 +274,22 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-17T10:19:11.271Z",
-      "lastSeen": "2026-08-19T02:47:21.812Z",
+      "lastSeen": "2026-08-19T06:21:34.005Z",
+      "isNew": true
+    },
+    "108-6a8522194c658c5da7559712": {
+      "id": "108-6a8522194c658c5da7559712",
+      "source": "108.jobs",
+      "title": "ພະນັກງານທີ່ປຶກສາການຂາຍ (Sales Consultant)",
+      "org": "Kolao Group",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a8522194c658c5da7559712",
+      "closingDate": "2026-09-03T16:59:59.999Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-08-19T06:21:34.005Z",
+      "lastSeen": "2026-08-19T06:21:34.005Z",
       "isNew": true
     }
   },
