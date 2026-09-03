@@ -82,7 +82,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
@@ -116,7 +116,7 @@
       ],
       "verifiedAt": "2026-08-30T07:34:44.944Z",
       "firstSeen": "2026-08-08T22:14:50.981Z",
-      "lastSeen": "2026-09-01T20:13:11.819Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "108-6a7ad3c3c04bc0f849d92158": {
@@ -179,7 +179,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-19T06:21:34.005Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "108-6a855c63b6afc2dc9a188ce4": {
@@ -194,7 +194,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-19T10:15:49.797Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "108-6a868167585e96605707250b": {
@@ -225,7 +225,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-21T10:17:06.783Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "108-6a8bb1afa0287a3d55b76999": {
@@ -241,7 +241,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-24T02:53:11.924Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "108-6a9528f142bc3308cbce767c": {
@@ -256,7 +256,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-31T17:16:04.444Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -287,7 +287,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-02T17:28:01.845Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZ2xvYmFs": {
@@ -322,6 +322,21 @@
       "verifiedAt": "2026-09-02T20:11:20.105Z",
       "firstSeen": "2026-09-02T20:11:20.105Z",
       "lastSeen": "2026-09-02T20:11:20.105Z",
+      "isNew": true
+    },
+    "108-6a98d23d6cee8bc93b3ecebf": {
+      "id": "108-6a98d23d6cee8bc93b3ecebf",
+      "source": "108.jobs",
+      "title": "EXPRESSION OF INTEREST-Consultant on Training Manual",
+      "org": "World Vision International – Laos",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a98d23d6cee8bc93b3ecebf",
+      "closingDate": "2026-09-18T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T06:34:57.501Z",
       "isNew": true
     }
   },
