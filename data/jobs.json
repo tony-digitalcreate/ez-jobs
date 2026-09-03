@@ -82,7 +82,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-08-04T04:51:24.320Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudndiLm9y": {
@@ -179,7 +179,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-19T06:21:34.005Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "108-6a855c63b6afc2dc9a188ce4": {
@@ -194,7 +194,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-19T10:15:49.797Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "108-6a868167585e96605707250b": {
@@ -210,7 +210,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-20T10:17:09.836Z",
-      "lastSeen": "2026-09-02T23:38:39.843Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "108-6a882499a0287a3d55342fcf": {
@@ -225,7 +225,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-21T10:17:06.783Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "108-6a8bb1afa0287a3d55b76999": {
@@ -241,7 +241,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-24T02:53:11.924Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "108-6a9528f142bc3308cbce767c": {
@@ -256,7 +256,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-31T17:16:04.444Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -287,7 +287,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-02T17:28:01.845Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZ2xvYmFs": {
@@ -336,7 +336,22 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-03T06:34:57.501Z",
-      "lastSeen": "2026-09-03T06:34:57.501Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
+      "isNew": true
+    },
+    "108-6a9940746cee8bc93b6ade76": {
+      "id": "108-6a9940746cee8bc93b6ade76",
+      "source": "108.jobs",
+      "title": "Senior Tax Consultant",
+      "org": "VDB Loi Co., Ltd",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a9940746cee8bc93b6ade76",
+      "closingDate": "2026-09-18T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-03T13:57:29.991Z",
+      "lastSeen": "2026-09-03T13:57:29.991Z",
       "isNew": true
     }
   },
