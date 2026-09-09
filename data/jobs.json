@@ -225,7 +225,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-31T17:16:04.444Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -241,7 +241,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-09-01T14:21:24.031Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a97d3b3942b20b5ee5ec397": {
@@ -256,7 +256,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-02T17:28:01.845Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZ2xvYmFs": {
@@ -281,16 +281,16 @@
       "source": "standbyroster.org",
       "title": "Laos Jobs | UN and INGO Jobs | StandbyRoster",
       "org": "standbyroster.org",
-      "location": "Vientiane",
+      "location": "Laos",
       "url": "https://standbyroster.org/jobs/laos",
       "closingDate": null,
-      "snippet": "National consultant to support training of Youth Union hotline staff, Vientiane , Lao PDR UNICEF - United Nations Children s FundVientiane, Lao PDR, Laos",
+      "snippet": "11 current laos jobs with UNICEF - United Nations Children s Fund, ITC - International Trade Centre UNCTAD-WTO, WFP - World Food Programme, UNIDO - United Nations Industrial Development Organization. Browse openings, check deadlines and apply with an ATS-ready resume.",
       "categories": [
         "Consultant / NGO"
       ],
       "verifiedAt": "2026-09-02T20:11:20.105Z",
       "firstSeen": "2026-09-02T20:11:20.105Z",
-      "lastSeen": "2026-09-04T23:28:40.825Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a98d23d6cee8bc93b3ecebf": {
@@ -305,7 +305,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-03T06:34:57.501Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a9940746cee8bc93b6ade76": {
@@ -320,7 +320,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-03T13:57:29.991Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a9a7d286cee8bc93baeb947": {
@@ -335,7 +335,7 @@
         "Environment"
       ],
       "firstSeen": "2026-09-04T13:50:01.055Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a9a7f596cee8bc93bafa44d": {
@@ -351,7 +351,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-04T13:50:01.055Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     },
     "108-6a9e971b16392db00d249843": {
@@ -361,12 +361,76 @@
       "org": "Ministry of Agriculture and Environment Department of Rural Development and Poverty Reduction Reducing Rural Poverty and Malnutrition Project II",
       "location": "Vientiane Capital",
       "url": "https://108.jobs/job_detail/6a9e971b16392db00d249843",
-      "closingDate": "2026-09-22T16:59:59.999Z",
+      "closingDate": "2026-09-22T16:59:59.000Z",
       "categories": [
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-07T15:20:43.341Z",
-      "lastSeen": "2026-09-08T23:43:25.102Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
+      "isNew": true
+    },
+    "108-6aa0caec63ddb43e5c148f10": {
+      "id": "108-6aa0caec63ddb43e5c148f10",
+      "source": "108.jobs",
+      "title": "National Human Resources and Organizational Policy Consultant",
+      "org": "ສະມາຄົມພັດທະນາບົດບາດຍິງ-ຊາຍ (Gender Development Association)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aa0caec63ddb43e5c148f10",
+      "closingDate": "2026-09-24T16:59:59.999Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-09T06:48:22.280Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
+      "isNew": true
+    },
+    "108-6aa0c16163ddb43e5c10623d": {
+      "id": "108-6aa0c16163ddb43e5c10623d",
+      "source": "108.jobs",
+      "title": "National consultant to develop the Wetland Management Plan for Souphanouvang University",
+      "org": "United Nations Development Programme Lao PDR",
+      "location": "Vientiane Capital, Luang Prabang",
+      "url": "https://108.jobs/job_detail/6aa0c16163ddb43e5c10623d",
+      "closingDate": "2026-09-24T16:59:59.000Z",
+      "categories": [
+        "Environment",
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-09T06:48:22.280Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
+      "isNew": true
+    },
+    "108-6aa0caf363ddb43e5c149063": {
+      "id": "108-6aa0caf363ddb43e5c149063",
+      "source": "108.jobs",
+      "title": "Financial Management Review consultant",
+      "org": "ສະມາຄົມພັດທະນາບົດບາດຍິງ-ຊາຍ (Gender Development Association)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aa0caf363ddb43e5c149063",
+      "closingDate": "2026-09-24T16:59:59.999Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-09T06:48:22.280Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
+      "isNew": true
+    },
+    "web-aHR0cHM6Ly93d3cudW5qb2Ju": {
+      "id": "web-aHR0cHM6Ly93d3cudW5qb2Ju",
+      "source": "unjobnet.org",
+      "title": "National Consultant - Vaccine Data Monitoring and Evaluation, WHO ...",
+      "org": "unjobnet.org",
+      "location": "Vientiane",
+      "url": "https://www.unjobnet.org/jobs/detail/who-national-consultant-vaccine-data-monitoring-and-evaluation-who-country-offic-88741961",
+      "closingDate": null,
+      "snippet": "National Consultant - Vaccine Data Monitoring and Evaluation , WHO Country Office, Vientiane , Lao PDR World Health Organization (WHO) WP_LAO Lao People s Democratic Republic Vientiane ( Laos ) Consultancy Locally Recruited Evaluation, Audit and Oversight Healthcare Research and data science Closes ",
+      "categories": [
+        "MEAL / M&E",
+        "Consultant / NGO"
+      ],
+      "verifiedAt": "2026-09-09T06:48:22.280Z",
+      "firstSeen": "2026-09-09T06:48:22.280Z",
+      "lastSeen": "2026-09-09T06:48:22.280Z",
       "isNew": true
     }
   },
