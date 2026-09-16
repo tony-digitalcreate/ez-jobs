@@ -133,7 +133,7 @@
         "Environment"
       ],
       "firstSeen": "2026-08-31T17:16:04.444Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -149,7 +149,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-09-01T14:21:24.031Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6a97d3b3942b20b5ee5ec397": {
@@ -164,7 +164,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-02T17:28:01.845Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZ2xvYmFs": {
@@ -214,7 +214,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-03T06:34:57.501Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6a9940746cee8bc93b6ade76": {
@@ -229,7 +229,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-03T13:57:29.991Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6a9a7d286cee8bc93baeb947": {
@@ -244,7 +244,7 @@
         "Environment"
       ],
       "firstSeen": "2026-09-04T13:50:01.055Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6a9a7f596cee8bc93bafa44d": {
@@ -260,7 +260,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-04T13:50:01.055Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6a9e971b16392db00d249843": {
@@ -275,7 +275,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-07T15:20:43.341Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6aa0caec63ddb43e5c148f10": {
@@ -290,7 +290,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-09T06:48:22.280Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6aa0c16163ddb43e5c10623d": {
@@ -306,7 +306,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-09T06:48:22.280Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "108-6aa0caf363ddb43e5c149063": {
@@ -321,7 +321,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-09T06:48:22.280Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudW5qb2Ju": {
@@ -349,13 +349,13 @@
       "org": "unvacancies.org",
       "location": "Vientiane",
       "url": "https://unvacancies.org/jobs/organization/who",
-      "closingDate": null,
+      "closingDate": "2026-10-06T00:00:00.000Z",
       "snippet": "National Consultant - Vaccine Data Monitoring and Evaluation , WHO Country Office, Vientiane , Lao PDR Consultant Vientiane , Laos Deadline Sep 23, 2026 WHO",
       "categories": [
         "MEAL / M&E",
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-09-09T13:59:19.902Z",
+      "verifiedAt": "2026-09-16T14:25:25.882Z",
       "firstSeen": "2026-09-09T13:59:19.902Z",
       "lastSeen": "2026-09-11T13:54:58.837Z",
       "isNew": true
@@ -375,7 +375,7 @@
       ],
       "verifiedAt": "2026-09-09T23:35:26.965Z",
       "firstSeen": "2026-09-09T23:35:26.965Z",
-      "lastSeen": "2026-09-16T06:55:07.210Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cubXJjbWVr": {
@@ -393,6 +393,36 @@
       "verifiedAt": "2026-09-11T20:07:46.899Z",
       "firstSeen": "2026-09-11T20:07:46.899Z",
       "lastSeen": "2026-09-11T20:07:46.899Z",
+      "isNew": true
+    },
+    "108-6aaa5cf239f160c77b6c31e8": {
+      "id": "108-6aaa5cf239f160c77b6c31e8",
+      "source": "108.jobs",
+      "title": "Environment Safety and Healh (ESH) Staff",
+      "org": "HOYA LAOS CO., LTD",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aaa5cf239f160c77b6c31e8",
+      "closingDate": "2026-10-01T16:59:59.999Z",
+      "categories": [
+        "Environment"
+      ],
+      "firstSeen": "2026-09-16T14:25:25.882Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
+      "isNew": true
+    },
+    "108-6aaa404639f160c77b61b344": {
+      "id": "108-6aaa404639f160c77b61b344",
+      "source": "108.jobs",
+      "title": "RFP of Water Stewardship Consultant",
+      "org": "",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aaa404639f160c77b61b344",
+      "closingDate": "2026-09-23T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-16T14:25:25.882Z",
+      "lastSeen": "2026-09-16T14:25:25.882Z",
       "isNew": true
     }
   },
