@@ -140,21 +140,6 @@
       "lastSeen": "2026-10-07T22:20:14.397Z",
       "isNew": true
     },
-    "108-6aab707139f160c77b9d0ee1": {
-      "id": "108-6aab707139f160c77b9d0ee1",
-      "source": "108.jobs",
-      "title": "Financial Management Consultant",
-      "org": "Wildlife Conservation Society (WCS)",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6aab707139f160c77b9d0ee1",
-      "closingDate": "2026-10-02T16:59:59.000Z",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-09-17T06:50:17.367Z",
-      "lastSeen": "2026-10-02T15:59:32.030Z",
-      "isNew": true
-    },
     "web-aHR0cHM6Ly9uZXh0cmFpc2Uu": {
       "id": "web-aHR0cHM6Ly9uZXh0cmFpc2Uu",
       "source": "nextraise.ai",
@@ -325,7 +310,7 @@
         "Environment"
       ],
       "firstSeen": "2026-09-28T17:50:43.031Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9mbGV4am9ic3Bh": {
@@ -373,7 +358,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-30T16:07:36.030Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuaW1wYWN0": {
@@ -406,7 +391,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-01T22:03:24.047Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6abf1376520cc0b7ee82a511": {
@@ -421,7 +406,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-02T07:37:31.228Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
@@ -454,7 +439,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-07T07:48:03.740Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6ac5aa86318531c002b7419d": {
@@ -469,7 +454,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-07T07:48:03.740Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6ac611e4ea43dfd22ee2a325": {
@@ -484,7 +469,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-07T17:02:50.352Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6ac71345ea43dfd22e12052e": {
@@ -500,7 +485,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-08T08:05:07.212Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6ac8959c945bf398c7ffb49d": {
@@ -516,7 +501,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6ac8657f1683ab41e1a5875d": {
@@ -531,7 +516,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -547,7 +532,23 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-10-09T16:39:09.721Z",
-      "lastSeen": "2026-10-09T16:39:09.721Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
+      "isNew": true
+    },
+    "108-6ac8ad09945bf398c7086170": {
+      "id": "108-6ac8ad09945bf398c7086170",
+      "source": "108.jobs",
+      "title": "Short-Term Qualitative Analysis Consultant",
+      "org": "Cord Laos",
+      "location": "Vientiane Capital, Champasak",
+      "url": "https://108.jobs/job_detail/6ac8ad09945bf398c7086170",
+      "closingDate": "2026-10-25T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO",
+        "Agriculture"
+      ],
+      "firstSeen": "2026-10-09T21:55:24.652Z",
+      "lastSeen": "2026-10-09T21:55:24.652Z",
       "isNew": true
     }
   },
