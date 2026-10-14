@@ -59,12 +59,12 @@
       "org": "unvacancies.org",
       "location": "Vientiane",
       "url": "https://unvacancies.org/jobs/technical-specialist-open-to-tier-0-1-2-applicants-DP-37384",
-      "closingDate": null,
+      "closingDate": "2026-10-16T00:00:00.000Z",
       "snippet": "Vientiane , Laos Posted 9 Oct 2026 About this role Technical Specialist will lead monitoring, evaluation and reporting for a Lao PDR forest programme, providing technical guidance to government and United Nations Development Programme (UNDP), and coordinating with PMU and DOF across multiple provinc",
       "categories": [
         "MEAL / M&E"
       ],
-      "verifiedAt": "2026-10-07T17:02:50.352Z",
+      "verifiedAt": "2026-10-14T21:01:39.188Z",
       "firstSeen": "2026-09-09T13:59:19.902Z",
       "lastSeen": "2026-10-11T15:59:31.658Z",
       "isNew": true
@@ -134,23 +134,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-22T20:33:23.315Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
-      "isNew": true
-    },
-    "108-6ab4ac3b176d3221c19eed4d": {
-      "id": "108-6ab4ac3b176d3221c19eed4d",
-      "source": "108.jobs",
-      "title": "REQUEST FOR PROPOSALS - Independent End-of-Project Evaluation",
-      "org": "Swisscontact",
-      "location": "Vientiane Capital, Xiangkhouang, Khammouane",
-      "url": "https://108.jobs/job_detail/6ab4ac3b176d3221c19eed4d",
-      "closingDate": "2026-10-07T16:59:59.000Z",
-      "categories": [
-        "MEAL / M&E",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-09-24T06:50:48.835Z",
-      "lastSeen": "2026-10-07T07:48:03.740Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ab4a7f5176d3221c19d5e3c": {
@@ -244,7 +228,7 @@
       ],
       "verifiedAt": "2026-10-13T19:58:25.815Z",
       "firstSeen": "2026-09-29T16:10:32.794Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6abc652ab5d2948ba1e3ba27": {
@@ -275,7 +259,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-30T16:07:36.030Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuaW1wYWN0": {
@@ -308,7 +292,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-01T22:03:24.047Z",
-      "lastSeen": "2026-10-14T06:48:55.079Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6abf1376520cc0b7ee82a511": {
@@ -323,7 +307,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-02T07:37:31.228Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
@@ -356,7 +340,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-07T07:48:03.740Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac5aa86318531c002b7419d": {
@@ -371,7 +355,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-07T07:48:03.740Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac611e4ea43dfd22ee2a325": {
@@ -386,7 +370,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-07T17:02:50.352Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac71345ea43dfd22e12052e": {
@@ -402,7 +386,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-08T08:05:07.212Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac8959c945bf398c7ffb49d": {
@@ -418,7 +402,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac8657f1683ab41e1a5875d": {
@@ -433,7 +417,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -449,7 +433,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-10-09T16:39:09.721Z",
-      "lastSeen": "2026-10-14T06:48:55.079Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6ac8ad09945bf398c7086170": {
@@ -465,7 +449,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-09T21:55:24.652Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9lc3RtLmZhLmVt": {
@@ -515,7 +499,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-12T19:27:13.143Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudWwubGEv": {
@@ -533,7 +517,7 @@
       ],
       "verifiedAt": "2026-10-12T19:27:13.143Z",
       "firstSeen": "2026-10-12T19:27:13.143Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6acdd9324803963fe3503011": {
@@ -548,7 +532,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-13T13:02:01.371Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6acded07cb661d4eeeb1b012": {
@@ -578,7 +562,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-13T13:02:01.371Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     },
     "108-6acf2660bbba4db565d98efd": {
@@ -595,7 +579,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-14T14:44:19.367Z",
-      "lastSeen": "2026-10-14T14:44:19.367Z",
+      "lastSeen": "2026-10-14T21:01:39.188Z",
       "isNew": true
     }
   },
