@@ -30,7 +30,7 @@
         "Environment",
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-18T23:45:05.460Z",
+      "verifiedAt": "2026-10-26T07:08:58.725Z",
       "firstSeen": "2026-08-08T22:14:50.981Z",
       "lastSeen": "2026-09-23T14:28:50.847Z",
       "isNew": true
@@ -55,9 +55,9 @@
     "web-aHR0cHM6Ly91bnZhY2FuY2ll": {
       "id": "web-aHR0cHM6Ly91bnZhY2FuY2ll",
       "source": "unvacancies.org",
-      "title": "National Project Coordinator, Skills - ILO Lao PDR | unvacancies",
+      "title": "National Project Coordinator, Skills - ILO - Vientiane",
       "org": "unvacancies.org",
-      "location": "Laos",
+      "location": "Vientiane",
       "url": "https://unvacancies.org/jobs/national-project-coordinator-skills-LO-13827",
       "closingDate": null,
       "snippet": "At least 2 years of professional experience at the national level in the area of project management, implementation, monitoring and evaluation with a thematic emphasis on employment and if possible on skills development and employability systems implementation and reform.",
@@ -66,7 +66,7 @@
       ],
       "verifiedAt": "2026-10-22T00:16:52.456Z",
       "firstSeen": "2026-09-09T13:59:19.902Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2ZXgu": {
@@ -148,7 +148,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-30T16:07:36.030Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuaW1wYWN0": {
@@ -196,7 +196,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-02T07:37:31.228Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
@@ -291,7 +291,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "108-6ac8657f1683ab41e1a5875d": {
@@ -386,7 +386,7 @@
         "MEAL / M&E"
       ],
       "firstSeen": "2026-10-12T19:27:13.143Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cudWwubGEv": {
@@ -419,7 +419,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-13T13:02:01.371Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "108-6acded07cb661d4eeeb1b012": {
@@ -434,7 +434,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-13T13:02:01.371Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "108-6acf2660bbba4db565d98efd": {
@@ -451,7 +451,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-14T14:44:19.367Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "108-6ad186ffbbba4db565616ab4": {
@@ -467,7 +467,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-16T06:29:54.897Z",
-      "lastSeen": "2026-10-25T23:38:54.375Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2bmV0": {
@@ -502,6 +502,21 @@
       "verifiedAt": "2026-10-21T06:40:59.802Z",
       "firstSeen": "2026-10-21T06:40:59.802Z",
       "lastSeen": "2026-10-24T17:02:50.184Z",
+      "isNew": true
+    },
+    "108-6adecc2aa7ce05dbb427f293": {
+      "id": "108-6adecc2aa7ce05dbb427f293",
+      "source": "108.jobs",
+      "title": "Consultants for Project Evaluation (2024–2026)",
+      "org": "Lao Microfinance Association (LMFA)",
+      "location": "Vientiane Capital, Bokeo, Vientiane Province, Bolikhamxai",
+      "url": "https://108.jobs/job_detail/6adecc2aa7ce05dbb427f293",
+      "closingDate": "2026-11-10T16:59:59.999Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-10-26T07:08:58.725Z",
+      "lastSeen": "2026-10-26T07:08:58.725Z",
       "isNew": true
     }
   },
