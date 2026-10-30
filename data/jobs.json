@@ -66,7 +66,7 @@
       ],
       "verifiedAt": "2026-10-29T01:23:12.319Z",
       "firstSeen": "2026-09-09T13:59:19.902Z",
-      "lastSeen": "2026-10-29T22:05:24.071Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2ZXgu": {
@@ -181,7 +181,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-02T07:37:31.228Z",
-      "lastSeen": "2026-10-29T22:05:24.071Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
@@ -231,7 +231,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-29T22:05:24.071Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     },
     "108-6ac8657f1683ab41e1a5875d": {
@@ -262,7 +262,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-10-09T16:39:09.721Z",
-      "lastSeen": "2026-10-29T22:05:24.071Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     },
     "108-6ac8ad09945bf398c7086170": {
@@ -407,7 +407,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-16T06:29:54.897Z",
-      "lastSeen": "2026-10-29T22:05:24.071Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2bmV0": {
@@ -456,7 +456,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-10-29T22:05:24.071Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -474,6 +474,21 @@
       "verifiedAt": "2026-10-29T01:23:12.319Z",
       "firstSeen": "2026-10-29T01:23:12.319Z",
       "lastSeen": "2026-10-29T01:23:12.319Z",
+      "isNew": true
+    },
+    "108-6ae42c61b70e3547181b38ff": {
+      "id": "108-6ae42c61b70e3547181b38ff",
+      "source": "108.jobs",
+      "title": "Consultant for the Review, Editing and Proof-Reading of the Urban Planning Guideline",
+      "org": "Borda laos project office",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6ae42c61b70e3547181b38ff",
+      "closingDate": "2026-11-14T16:59:59.999Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T07:48:58.224Z",
       "isNew": true
     }
   },
