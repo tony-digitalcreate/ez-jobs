@@ -66,7 +66,7 @@
       ],
       "verifiedAt": "2026-10-29T01:23:12.319Z",
       "firstSeen": "2026-09-09T13:59:19.902Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2ZXgu": {
@@ -181,7 +181,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-02T07:37:31.228Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
@@ -231,7 +231,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     },
     "108-6ac8657f1683ab41e1a5875d": {
@@ -262,7 +262,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-10-09T16:39:09.721Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     },
     "108-6ac8ad09945bf398c7086170": {
@@ -407,7 +407,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-16T06:29:54.897Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2bmV0": {
@@ -417,12 +417,12 @@
       "org": "devnetjobs.org",
       "location": "Laos",
       "url": "https://www.devnetjobs.org/JobDescription.aspx?Job_Id=294285",
-      "closingDate": "2026-11-29T00:00:00.000Z",
+      "closingDate": "2026-11-19T00:00:00.000Z",
       "snippet": "Local Sustainability Advisor Consultant at Asian Disaster Preparedness Center (ADPC) in Lao Peoples Democratic Republic. Apply by: 11-Nov-2025. View job details and application information on DevNetJobs.",
       "categories": [
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-23T14:29:42.452Z",
+      "verifiedAt": "2026-10-30T16:18:26.240Z",
       "firstSeen": "2026-10-16T14:22:06.310Z",
       "lastSeen": "2026-10-21T14:43:29.650Z",
       "isNew": true
@@ -456,7 +456,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -488,7 +488,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-10-30T07:48:58.224Z",
+      "lastSeen": "2026-10-30T16:18:26.240Z",
       "isNew": true
     }
   },
