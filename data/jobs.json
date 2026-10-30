@@ -66,7 +66,7 @@
       ],
       "verifiedAt": "2026-10-29T01:23:12.319Z",
       "firstSeen": "2026-09-09T13:59:19.902Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2ZXgu": {
@@ -154,21 +154,6 @@
       "lastSeen": "2026-10-08T22:32:45.871Z",
       "isNew": true
     },
-    "108-6aaa578a39f160c77b6a9208": {
-      "id": "108-6aaa578a39f160c77b6a9208",
-      "source": "108.jobs",
-      "title": "Public Tender Ref.: 10057015 Capacity Development for the Wild Tea Value Chains -ProFEB",
-      "org": "",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6aaa578a39f160c77b6a9208",
-      "closingDate": "2026-10-23T16:59:59.000Z",
-      "categories": [
-        "Agriculture"
-      ],
-      "firstSeen": "2026-10-01T22:03:24.047Z",
-      "lastSeen": "2026-10-23T14:29:42.452Z",
-      "isNew": true
-    },
     "108-6abf1376520cc0b7ee82a511": {
       "id": "108-6abf1376520cc0b7ee82a511",
       "source": "108.jobs",
@@ -181,7 +166,7 @@
         "Environment"
       ],
       "firstSeen": "2026-10-02T07:37:31.228Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
@@ -202,22 +187,6 @@
       "lastSeen": "2026-10-25T17:23:46.858Z",
       "isNew": true
     },
-    "108-6ac71345ea43dfd22e12052e": {
-      "id": "108-6ac71345ea43dfd22e12052e",
-      "source": "108.jobs",
-      "title": "National Monitoring & Evaluation Consultant",
-      "org": "United Nations Development Programme Lao PDR",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6ac71345ea43dfd22e12052e",
-      "closingDate": "2026-10-23T16:59:59.999Z",
-      "categories": [
-        "MEAL / M&E",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-10-08T08:05:07.212Z",
-      "lastSeen": "2026-10-23T14:29:42.452Z",
-      "isNew": true
-    },
     "108-6ac8959c945bf398c7ffb49d": {
       "id": "108-6ac8959c945bf398c7ffb49d",
       "source": "108.jobs",
@@ -231,7 +200,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     },
     "108-6ac8657f1683ab41e1a5875d": {
@@ -262,7 +231,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-10-09T16:39:09.721Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     },
     "108-6ac8ad09945bf398c7086170": {
@@ -407,7 +376,7 @@
         "Agriculture"
       ],
       "firstSeen": "2026-10-16T06:29:54.897Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly93d3cuZGV2bmV0": {
@@ -456,7 +425,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -488,7 +457,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-10-30T16:18:26.240Z",
+      "lastSeen": "2026-10-30T21:43:35.128Z",
       "isNew": true
     }
   },
