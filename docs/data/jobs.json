@@ -182,7 +182,7 @@
         "MEAL / M&E",
         "Social / Safeguards"
       ],
-      "verifiedAt": "2026-10-25T17:23:46.858Z",
+      "verifiedAt": "2026-11-01T21:24:55.202Z",
       "firstSeen": "2026-10-04T15:00:50.588Z",
       "lastSeen": "2026-10-25T17:23:46.858Z",
       "isNew": true
@@ -200,7 +200,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-11-01T16:29:18.906Z",
+      "lastSeen": "2026-11-01T21:24:55.202Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -216,22 +216,7 @@
         "Social / Safeguards"
       ],
       "firstSeen": "2026-10-09T16:39:09.721Z",
-      "lastSeen": "2026-11-01T16:29:18.906Z",
-      "isNew": true
-    },
-    "108-6ac8ad09945bf398c7086170": {
-      "id": "108-6ac8ad09945bf398c7086170",
-      "source": "108.jobs",
-      "title": "Short-Term Qualitative Analysis Consultant",
-      "org": "Cord Laos",
-      "location": "Vientiane Capital, Champasak",
-      "url": "https://108.jobs/job_detail/6ac8ad09945bf398c7086170",
-      "closingDate": "2026-10-25T16:59:59.000Z",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-10-09T21:55:24.652Z",
-      "lastSeen": "2026-10-25T13:59:01.580Z",
+      "lastSeen": "2026-11-01T21:24:55.202Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9lc3RtLmZhLmVt": {
@@ -246,7 +231,7 @@
       "categories": [
         "Environment"
       ],
-      "verifiedAt": "2026-10-25T17:23:46.858Z",
+      "verifiedAt": "2026-11-01T21:24:55.202Z",
       "firstSeen": "2026-10-11T15:59:31.658Z",
       "lastSeen": "2026-10-16T14:22:06.310Z",
       "isNew": true
@@ -258,12 +243,12 @@
       "org": "jobs.unicef.org",
       "location": "Vientiane",
       "url": "https://jobs.unicef.org/en-us/job/596587/",
-      "closingDate": null,
+      "closingDate": "2026-11-10T00:00:00.000Z",
       "snippet": "National Consultant to Support Development of the National MIYCN Guidelines, Vientiane , Lao PDR, 6 months, Remote, no travel required Apply now Job no: 596587 Contract type: Consultant Duty Station: Vientiane Level: Consultancy Location: Lao People s Democratic Republic Categories: Programme Manage",
       "categories": [
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-25T17:23:46.858Z",
+      "verifiedAt": "2026-11-01T21:24:55.202Z",
       "firstSeen": "2026-10-11T15:59:31.658Z",
       "lastSeen": "2026-11-01T00:30:11.066Z",
       "isNew": true
@@ -410,7 +395,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-11-01T16:29:18.906Z",
+      "lastSeen": "2026-11-01T21:24:55.202Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -442,7 +427,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-11-01T16:29:18.906Z",
+      "lastSeen": "2026-11-01T21:24:55.202Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JlcmEuY29t": {
