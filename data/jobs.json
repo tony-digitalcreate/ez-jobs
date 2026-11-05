@@ -47,7 +47,7 @@
       "categories": [
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-29T16:28:39.220Z",
+      "verifiedAt": "2026-11-05T17:42:45.530Z",
       "firstSeen": "2026-09-02T20:11:20.105Z",
       "lastSeen": "2026-11-01T00:30:11.066Z",
       "isNew": true
@@ -64,7 +64,7 @@
       "categories": [
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-29T16:28:39.220Z",
+      "verifiedAt": "2026-11-05T17:42:45.530Z",
       "firstSeen": "2026-09-09T23:35:26.965Z",
       "lastSeen": "2026-10-21T06:40:59.802Z",
       "isNew": true
@@ -117,7 +117,7 @@
         "MEAL / M&E",
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-29T16:28:39.220Z",
+      "verifiedAt": "2026-11-05T17:42:45.530Z",
       "firstSeen": "2026-10-01T00:52:42.557Z",
       "lastSeen": "2026-10-08T22:32:45.871Z",
       "isNew": true
@@ -150,7 +150,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-11-05T08:38:27.266Z",
+      "lastSeen": "2026-11-05T17:42:45.530Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -221,23 +221,6 @@
       "lastSeen": "2026-11-01T00:30:11.066Z",
       "isNew": true
     },
-    "108-6acf2660bbba4db565d98efd": {
-      "id": "108-6acf2660bbba4db565d98efd",
-      "source": "108.jobs",
-      "title": "Environmental and Social Safeguards and Gender Consultant",
-      "org": "Environment and Forest Protection Fund",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6acf2660bbba4db565d98efd",
-      "closingDate": "2026-10-29T16:59:59.000Z",
-      "categories": [
-        "Environment",
-        "Social / Safeguards",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-10-14T14:44:19.367Z",
-      "lastSeen": "2026-10-29T16:28:39.220Z",
-      "isNew": true
-    },
     "108-6ad186ffbbba4db565616ab4": {
       "id": "108-6ad186ffbbba4db565616ab4",
       "source": "108.jobs",
@@ -300,7 +283,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-11-05T08:38:27.266Z",
+      "lastSeen": "2026-11-05T17:42:45.530Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -332,7 +315,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-11-05T08:38:27.266Z",
+      "lastSeen": "2026-11-05T17:42:45.530Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JlcmEuY29t": {
@@ -350,6 +333,21 @@
       "verifiedAt": "2026-10-31T15:30:48.505Z",
       "firstSeen": "2026-10-31T15:30:48.505Z",
       "lastSeen": "2026-10-31T15:30:48.505Z",
+      "isNew": true
+    },
+    "108-6aec48f9a60bdca5a1d8c964": {
+      "id": "108-6aec48f9a60bdca5a1d8c964",
+      "source": "108.jobs",
+      "title": "Consultant to Provide Support BOL on Regulation",
+      "org": "Lao Microfinance Association (LMFA)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aec48f9a60bdca5a1d8c964",
+      "closingDate": "2026-11-16T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-11-05T17:42:45.530Z",
+      "lastSeen": "2026-11-05T17:42:45.530Z",
       "isNew": true
     }
   },
