@@ -52,23 +52,6 @@
       "lastSeen": "2026-11-01T00:30:11.066Z",
       "isNew": true
     },
-    "web-aHR0cHM6Ly91bnZhY2FuY2ll": {
-      "id": "web-aHR0cHM6Ly91bnZhY2FuY2ll",
-      "source": "unvacancies.org",
-      "title": "National Consultant to Support Development of the…",
-      "org": "unvacancies.org",
-      "location": "Vientiane",
-      "url": "https://unvacancies.org/jobs/national-consultant-to-support-development-of-the-national-miycn-guidelines-vientiane-lao-pdr-6-mont-F-596587",
-      "closingDate": null,
-      "snippet": "National Consultant to Support Development of the National MIYCN Guidelines, Vientiane , Lao PDR, 6 months, Remote, no travel required PDR at UNICEF · Apply by…",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "verifiedAt": "2026-10-29T01:23:12.319Z",
-      "firstSeen": "2026-09-09T13:59:19.902Z",
-      "lastSeen": "2026-11-01T00:30:11.066Z",
-      "isNew": true
-    },
     "web-aHR0cHM6Ly93d3cuZGV2ZXgu": {
       "id": "web-aHR0cHM6Ly93d3cuZGV2ZXgu",
       "source": "devex.com",
@@ -154,24 +137,6 @@
       "lastSeen": "2026-11-01T16:29:18.906Z",
       "isNew": true
     },
-    "web-aHR0cHM6Ly9ocm1zLml1Y24u": {
-      "id": "web-aHR0cHM6Ly9ocm1zLml1Y24u",
-      "source": "hrms.iucn.org",
-      "title": "IUCN-HRMS Vacancy Details",
-      "org": "hrms.iucn.org",
-      "location": "Laos",
-      "url": "https://hrms.iucn.org/iresy/index.cfm?event=vac.show&vacId=11804",
-      "closingDate": "2026-10-29T00:00:00.000Z",
-      "snippet": "Under the direct supervision of the CMDA Chief Technical Adviser (CTA), the Senior GEF IW Monitoring and Evaluation (M&E) Officer will lead the M&E, knowledge management, and learning, and risk management and safeguards of both projects in coordination with IUCN staff in Cambodia, Lao PDR, and Viet ",
-      "categories": [
-        "MEAL / M&E",
-        "Social / Safeguards"
-      ],
-      "verifiedAt": "2026-11-01T21:24:55.202Z",
-      "firstSeen": "2026-10-04T15:00:50.588Z",
-      "lastSeen": "2026-10-25T17:23:46.858Z",
-      "isNew": true
-    },
     "108-6ac8959c945bf398c7ffb49d": {
       "id": "108-6ac8959c945bf398c7ffb49d",
       "source": "108.jobs",
@@ -185,7 +150,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-11-04T22:56:43.607Z",
+      "lastSeen": "2026-11-05T08:38:27.266Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -335,7 +300,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-11-04T22:56:43.607Z",
+      "lastSeen": "2026-11-05T08:38:27.266Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -350,7 +315,7 @@
       "categories": [
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-10-29T01:23:12.319Z",
+      "verifiedAt": "2026-11-05T08:38:27.266Z",
       "firstSeen": "2026-10-29T01:23:12.319Z",
       "lastSeen": "2026-11-01T00:30:11.066Z",
       "isNew": true
@@ -367,7 +332,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-11-04T22:56:43.607Z",
+      "lastSeen": "2026-11-05T08:38:27.266Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JlcmEuY29t": {
@@ -396,6 +361,7 @@
     "web-aHR0cHM6Ly9sYS5saW5rZWRp": "2026-10-04T15:00:50.588Z",
     "web-aHR0cHM6Ly91bnRhbGVudC5v": "2026-10-06T01:57:26.002Z",
     "web-aHR0cHM6Ly9mbGV4am9ic3Bh": "2026-10-20T20:56:49.895Z",
-    "web-aHR0cHM6Ly9jYW1wdXNsaWZl": "2026-10-21T06:40:59.802Z"
+    "web-aHR0cHM6Ly9jYW1wdXNsaWZl": "2026-10-21T06:40:59.802Z",
+    "web-aHR0cHM6Ly91bnZhY2FuY2ll": "2026-11-05T08:38:27.266Z"
   }
 }
