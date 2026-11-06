@@ -150,7 +150,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:04:47.658Z",
-      "lastSeen": "2026-11-05T22:57:34.078Z",
+      "lastSeen": "2026-11-06T08:38:26.292Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -254,23 +254,6 @@
       "lastSeen": "2026-10-21T14:43:29.650Z",
       "isNew": true
     },
-    "web-aHR0cHM6Ly9jaGFuZ2VtYWtl": {
-      "id": "web-aHR0cHM6Ly9jaGFuZ2VtYWtl",
-      "source": "changemakerhq.org",
-      "title": "Consultant (Precursor Industrial mapping - Lao PDR) — UNODC",
-      "org": "changemakerhq.org",
-      "location": "Vientiane",
-      "url": "https://changemakerhq.org/jobs/consultant-precursor-industrial-mapping-lao-pdr-unodc-vientiane-30070",
-      "closingDate": "2026-10-30T00:00:00.000Z",
-      "snippet": "Consultant (Precursor Industrial mapping - Lao PDR) at United Nations Office on Drugs and Crime in VIENTIANE . Apply by 30 Oct 2026. Direct link to the official application.",
-      "categories": [
-        "Consultant / NGO"
-      ],
-      "verifiedAt": "2026-11-04T08:12:38.490Z",
-      "firstSeen": "2026-10-21T06:40:59.802Z",
-      "lastSeen": "2026-10-24T17:02:50.184Z",
-      "isNew": true
-    },
     "108-6adecc2aa7ce05dbb427f293": {
       "id": "108-6adecc2aa7ce05dbb427f293",
       "source": "108.jobs",
@@ -283,7 +266,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-11-05T22:57:34.078Z",
+      "lastSeen": "2026-11-06T08:38:26.292Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -315,7 +298,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-11-05T22:57:34.078Z",
+      "lastSeen": "2026-11-06T08:38:26.292Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JlcmEuY29t": {
@@ -347,7 +330,22 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-11-05T17:42:45.530Z",
-      "lastSeen": "2026-11-05T22:57:34.078Z",
+      "lastSeen": "2026-11-06T08:38:26.292Z",
+      "isNew": true
+    },
+    "108-6aed7aa0fdf763906b6657f5": {
+      "id": "108-6aed7aa0fdf763906b6657f5",
+      "source": "108.jobs",
+      "title": "Special Service Agreement (SSA) on implementation support for Strengthening Climate Resilience of the Lao PDR Health System (SAP030), Green Climate Fund project, in partnership with Save the Children and the WHO Representative Office for Lao PDR , for period 1 Year, with possibility of extension",
+      "org": "World Health Organization ",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aed7aa0fdf763906b6657f5",
+      "closingDate": "2026-11-21T16:59:59.000Z",
+      "categories": [
+        "Environment"
+      ],
+      "firstSeen": "2026-11-06T08:38:26.292Z",
+      "lastSeen": "2026-11-06T08:38:26.292Z",
       "isNew": true
     }
   },
