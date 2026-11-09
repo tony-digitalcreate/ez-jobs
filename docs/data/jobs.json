@@ -30,7 +30,7 @@
         "Environment",
         "Consultant / NGO"
       ],
-      "verifiedAt": "2026-11-02T08:29:18.186Z",
+      "verifiedAt": "2026-11-09T08:46:06.786Z",
       "firstSeen": "2026-08-08T22:14:50.981Z",
       "lastSeen": "2026-09-23T14:28:50.847Z",
       "isNew": true
@@ -234,7 +234,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-11-09T01:15:41.695Z",
+      "lastSeen": "2026-11-09T08:46:06.786Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -266,7 +266,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-11-09T01:15:41.695Z",
+      "lastSeen": "2026-11-09T08:46:06.786Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JlcmEuY29t": {
@@ -298,7 +298,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-11-05T17:42:45.530Z",
-      "lastSeen": "2026-11-09T01:15:41.695Z",
+      "lastSeen": "2026-11-09T08:46:06.786Z",
       "isNew": true
     },
     "108-6aed7aa0fdf763906b6657f5": {
@@ -313,7 +313,7 @@
         "Environment"
       ],
       "firstSeen": "2026-11-06T08:38:26.292Z",
-      "lastSeen": "2026-11-09T01:15:41.695Z",
+      "lastSeen": "2026-11-09T08:46:06.786Z",
       "isNew": true
     },
     "108-6aed6c5afdf763906b60d723": {
@@ -330,6 +330,21 @@
       ],
       "firstSeen": "2026-11-06T22:28:00.805Z",
       "lastSeen": "2026-11-09T01:15:41.695Z",
+      "isNew": true
+    },
+    "108-6af146c352f538528cd9f2a7": {
+      "id": "108-6af146c352f538528cd9f2a7",
+      "source": "108.jobs",
+      "title": "Youth Engagement and Governance Officer (consultant)",
+      "org": "Cord Laos",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6af146c352f538528cd9f2a7",
+      "closingDate": "2026-11-22T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-11-09T08:46:06.786Z",
+      "lastSeen": "2026-11-09T08:46:06.786Z",
       "isNew": true
     }
   },
