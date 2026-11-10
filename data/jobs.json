@@ -234,7 +234,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-26T07:08:58.725Z",
-      "lastSeen": "2026-11-10T03:51:44.565Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9sYW9wZHIudW4u": {
@@ -266,7 +266,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:48:58.224Z",
-      "lastSeen": "2026-11-10T03:51:44.565Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
       "isNew": true
     },
     "web-aHR0cHM6Ly9qb2JlcmEuY29t": {
@@ -298,7 +298,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-11-05T17:42:45.530Z",
-      "lastSeen": "2026-11-10T03:51:44.565Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
       "isNew": true
     },
     "108-6aed7aa0fdf763906b6657f5": {
@@ -313,7 +313,7 @@
         "Environment"
       ],
       "firstSeen": "2026-11-06T08:38:26.292Z",
-      "lastSeen": "2026-11-10T03:51:44.565Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
       "isNew": true
     },
     "108-6aed6c5afdf763906b60d723": {
@@ -329,7 +329,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-11-06T22:28:00.805Z",
-      "lastSeen": "2026-11-09T01:15:41.695Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
       "isNew": true
     },
     "108-6af146c352f538528cd9f2a7": {
@@ -344,7 +344,37 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-11-09T08:46:06.786Z",
-      "lastSeen": "2026-11-10T03:51:44.565Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
+      "isNew": true
+    },
+    "108-6af2cb751fad6ad344111994": {
+      "id": "108-6af2cb751fad6ad344111994",
+      "source": "108.jobs",
+      "title": "Environmental Officer",
+      "org": "Xekong 4 Power Company Limited ",
+      "location": "Vientiane Capital, Sekong",
+      "url": "https://108.jobs/job_detail/6af2cb751fad6ad344111994",
+      "closingDate": "2026-11-25T16:59:59.000Z",
+      "categories": [
+        "Environment"
+      ],
+      "firstSeen": "2026-11-10T13:51:15.472Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
+      "isNew": true
+    },
+    "108-6af2951a2a8336c8e4a70745": {
+      "id": "108-6af2951a2a8336c8e4a70745",
+      "source": "108.jobs",
+      "title": "Consultant for the Review, Editing and Proof-Reading of the Ministerial Agreement on Landfill and Landfill Management Guideline",
+      "org": "Borda laos project office",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6af2951a2a8336c8e4a70745",
+      "closingDate": "2026-11-25T16:59:59.000Z",
+      "categories": [
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-11-10T13:51:15.472Z",
+      "lastSeen": "2026-11-10T13:51:15.472Z",
       "isNew": true
     }
   },
